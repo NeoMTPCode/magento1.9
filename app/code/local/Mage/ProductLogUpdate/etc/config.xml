@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<config>
+    <!--basic information about Magento module.-->
+    <modules>
+        <!--NameSpace_Module-->
+        <Mage_ProductLogUpdate>
+            <version>1.8.0.0</version>
+        </Mage_ProductLogUpdate>
+    </modules>
+    <admin>
+        <routers>
+            <productlogupdate>
+                <use>admin</use>
+                <args>
+                    <module>Mage_ProductLogUpdate</module>
+                    <frontname>productlogupdate</frontname>
+                </args>
+            </productlogupdate>
+        </routers>
+    </admin>
+    <adminhtml>
+        <menu>
+            <menu1 translate="title" module="ProductLogUpdate">
+                <title>Mage_ProductLogUpdate</title>
+                <sort_order>60</sort_order>
+                <children>
+                    <menuitem1 module="ProductLogUpdate">
+                        <title>Product Log Update</title>
+                        <action>productlogupdate/example</action>
+                    </menuitem1>
+                </children>
+            </menu1>
+        </menu>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <menu1 translate="title">
+                            <title>Mage_ProductLogUpdate</title>
+                            <sort_order>60</sort_order>
+                            <children>
+                                <menuitem1>
+                                    <title>Menu item 1</title>
+                                    <sort_order>0</sort_order>
+                                    <action>admin</action>
+                                </menuitem1>
+                            </children>
+                        </menu1>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <global>
+        <models>
+            <mage_productlogupdate>
+                <class>Mage_ProductLogUpdate_Model</class>
+                <resourceModel>mage_productlogupdate_resource</resourceModel>
+            </mage_productlogupdate>
+        </models>
+        <resources>
+            <mage_productlogupdate_setup>
+                <setup>
+                    <module>Mage_ProductLogUpdate</module>
+                </setup>
+            </mage_productlogupdate_setup>
+        </resources>
+        <helpers>
+            <mage_productlogupdate>
+                <class>Mage_ProductLogUpdate_Helper</class>
+            </mage_productlogupdate>
+        </helpers>
+        <!--<events>-->
+            <!--<catalog_product_save_after>-->
+                <!--<observers>-->
+                    <!--<mage_productlogupdate>-->
+                        <!--<class>mage_productlogupdate/observer</class>-->
+                        <!--<method>logUpdate</method>-->
+                        <!--<type>singleton</type>-->
+                    <!--</mage_productlogupdate>-->
+                <!--</observers>-->
+            <!--</catalog_product_save_after>-->
+        <!--</events>-->
+    </global>
+</config>

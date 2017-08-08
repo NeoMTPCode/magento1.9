@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mycustom_Adminhtml>
+            <version>0.0.1</version>
+        </Mycustom_Adminhtml>
+    </modules>
+    <global>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <sales_order_grid>Mycustom_Adminhtml_Block_Sales_Order_Grid</sales_order_grid>
+                </rewrite>
+                <rewrite>
+                    <sales_order_view>Mycustom_Adminhtml_Block_Sales_Order_View</sales_order_view>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <models>
+            <mycustom_adminhtml>
+                <class>Mycustom_Adminhtml_Model</class>
+            </mycustom_adminhtml>
+        </models>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <mycustom_adminhtml before="Mage_Adminhtml">Mycustom_Adminhtml_Adminhtml</mycustom_adminhtml>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>

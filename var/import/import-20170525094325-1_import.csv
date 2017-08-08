@@ -1,0 +1,215 @@
+store,websites,attribute_set,type,category_ids,sku,has_options,name,url_key,country_of_manufacture,msrp_enabled,msrp_display_actual_price_type,meta_title,meta_description,image,small_image,thumbnail,custom_design,page_layout,options_container,gift_message_available,image_label,small_image_label,thumbnail_label,url_path,timershow,price,special_price,weight,msrp,manufacturer,color,status,is_recurring,visibility,tax_class_id,featured,description,short_description,meta_keyword,custom_layout_update,special_from_date,special_to_date,news_from_date,news_to_date,custom_design_from,custom_design_to,qty,min_qty,use_config_min_qty,is_qty_decimal,backorders,use_config_backorders,min_sale_qty,use_config_min_sale_qty,max_sale_qty,use_config_max_sale_qty,is_in_stock,low_stock_date,notify_stock_qty,use_config_notify_stock_qty,manage_stock,use_config_manage_stock,stock_status_changed_auto,use_config_qty_increments,qty_increments,use_config_enable_qty_inc,enable_qty_increments,is_decimal_divided,stock_status_changed_automatically,use_config_enable_qty_increments,product_name,store_id,product_type_id,product_status_changed,product_changed_websites,website,_media_image,_media_lable,_media_position,_media_is_disabled
+admin,base,Default,simple,"453,454,455,458",5.80E+12,0,HTC U Ultra Sapphire (128GB) - Hàng Chính Hãng,htc-u-ultra-sapphire-128gb-hang-chinh-hang, ,Use config,Use config,,,/phone/HTC-U-Ultra-Sapphire.jpg,/phone/HTC-U-Ultra-Sapphire.jpg,/phone/HTC-U-Ultra-Sapphire.jpg,,No layout updates,Product Info Column,No,,,,htc-u-ultra-sapphire-128gb-hang-chinh-hang.html,1,16990000,,2,,,,Enabled,No,"Catalog, Search",None,0,"<table border=""0"">
+<tbody>
+<tr>
+<td>
+<table id=""chi-tiet"" class=""table table-bordered table-detail table-curved"">
+<tbody>
+<tr class=""active"">
+<td colspan=""2""><span>General</span></td>
+</tr>
+<tr>
+<td>SKU</td>
+<td class=""last"">5800778053247</td>
+</tr>
+<tr class=""active"">
+<td colspan=""2""><span>Th&ocirc;ng tin chi tiáº¿t</span></td>
+</tr>
+<tr>
+<td>ThÆ°Æ¡ng hiá»‡u</td>
+<td class=""last""><a href=""http://tiki.vn/thuong-hieu/samsung.html"">Samsung</a></td>
+</tr>
+<tr class=""active"">
+<td colspan=""2""><span>M&agrave;n h&igrave;nh</span></td>
+</tr>
+<tr>
+<td>Loáº¡i m&agrave;n h&igrave;nh (C&ocirc;ng nghá»‡ m&agrave;n h&igrave;nh)</td>
+<td class=""last"">TFT</td>
+</tr>
+<tr>
+<td>K&iacute;ch thÆ°á»›c m&agrave;n h&igrave;nh</td>
+<td class=""last"">5.5""</td>
+</tr>
+<tr>
+<td>Äá»™ ph&acirc;n giáº£i m&agrave;n h&igrave;nh</td>
+<td class=""last"">Full HD (1920 x 1080)</td>
+</tr>
+<tr class=""active"">
+<td colspan=""2""><span>Chá»¥p h&igrave;nh &amp; Quay phim</span></td>
+</tr>
+<tr>
+<td>Camera trÆ°á»›c</td>
+<td class=""last"">8 MP</td>
+</tr>
+<tr>
+<td>Camera sau</td>
+<td class=""last"">13MP</td>
+</tr>
+<tr class=""active"">
+<td colspan=""2""><span>Bá»™ nhá»› &amp; LÆ°u trá»¯</span></td>
+</tr>
+<tr>
+<td>Bá»™ Nhá»› RAM</td>
+<td class=""last"">3GB</td>
+</tr>
+<tr>
+<td>Bá»™ nhá»› trong (ROM)</td>
+<td class=""last"">32GB</td>
+</tr>
+<tr>
+<td>Há»— trá»£ tháº» nhá»› ngo&agrave;i</td>
+<td class=""last"">MicroSD</td>
+</tr>
+<tr>
+<td>Há»— trá»£ tháº» tá»‘i Ä‘a</td>
+<td class=""last"">256GB</td>
+</tr>
+<tr class=""active"">
+<td colspan=""2""><span>Thiáº¿t káº¿ &amp; Trá»ng lÆ°á»£ng</span></td>
+</tr>
+<tr>
+<td>Trá»ng lÆ°á»£ng váº­n chuyá»ƒn (gram)</td>
+<td class=""last"">300
+<div itemprop=""weight"">&nbsp;</div>
+</td>
+</tr>
+<tr>
+<td>K&iacute;ch thÆ°á»›c</td>
+<td class=""last"">151.5 x 74.9 x 8.1 mm</td>
+</tr>
+<tr class=""active"">
+<td colspan=""2""><span>Há»‡ Ä‘iá»u h&agrave;nh - CPU</span></td>
+</tr>
+<tr>
+<td>Tá»‘c Ä‘á»™ chip (GHz)</td>
+<td class=""last"">1.6 GHz</td>
+</tr>
+<tr>
+<td>Loáº¡i l&otilde;i chip</td>
+<td class=""last"">8 Nh&acirc;n</td>
+</tr>
+<tr>
+<td>Chip Ä‘á»“ há»a (GPU)</td>
+<td class=""last"">Äang cáº­p nháº­t</td>
+</tr>
+<tr>
+<td>Há»‡ Ä‘iá»u h&agrave;nh</td>
+<td class=""last"">Android 6.0 Marshmallow</td>
+</tr>
+<tr class=""active"">
+<td colspan=""2""><span>Th&ocirc;ng tin pin</span></td>
+</tr>
+<tr>
+<td>Dung lÆ°á»£ng pin (mAh)</td>
+<td class=""last"">3300 mAh</td>
+</tr>
+<tr>
+<td>Loáº¡i pin</td>
+<td class=""last"">Pin chuáº©n Li-Ion</td>
+</tr>
+<tr>
+<td>Pin c&oacute; thá»ƒ th&aacute;o rá»i</td>
+<td class=""last"">Kh&ocirc;ng</td>
+</tr>
+<tr class=""active"">
+<td colspan=""2""><span>Káº¿t ná»‘i</span></td>
+</tr>
+<tr>
+<td>BÄƒng táº§n 2G</td>
+<td class=""last"">GSM</td>
+</tr>
+<tr>
+<td>BÄƒng táº§n 3G</td>
+<td class=""last"">HSPDA</td>
+</tr>
+<tr>
+<td>H&ocirc;Ìƒ trÆ¡Ì£ 4G</td>
+<td class=""last"">CoÌ h&ocirc;Ìƒ trÆ¡Ì£ 4G</td>
+</tr>
+<tr>
+<td>Loáº¡i Sim</td>
+<td class=""last"">Micro SIM</td>
+</tr>
+<tr>
+<td>Sá»‘ khe sim</td>
+<td class=""last"">2 SIM 2 s&oacute;ng</td>
+</tr>
+<tr>
+<td>Wifi</td>
+<td class=""last"">C&oacute;</td>
+</tr>
+<tr>
+<td>GPS</td>
+<td class=""last"">A-GPS, GLONASS</td>
+</tr>
+<tr>
+<td>Bluetooth</td>
+<td class=""last"">C&oacute;</td>
+</tr>
+<tr>
+<td>Káº¿t ná»‘i kh&aacute;c</td>
+<td class=""last"">OTG</td>
+</tr>
+<tr>
+<td>Cá»•ng sáº¡c</td>
+<td class=""last"">Micro USB</td>
+</tr>
+<tr class=""active"">
+<td colspan=""2""><span>Giáº£i tr&iacute; &amp; á»¨ng dá»¥ng</span></td>
+</tr>
+<tr>
+<td>Xem phim</td>
+<td class=""last"">H.265, 3GP, MP4, AVI, WMV, H.264(MPEG4-AVC), DivX, WMV9, Xvid</td>
+</tr>
+<tr>
+<td>Nghe nháº¡c</td>
+<td class=""last"">Lossless, MP3, WAV, WMA</td>
+</tr>
+<tr>
+<td>Ghi &acirc;m</td>
+<td class=""last"">C&oacute;</td>
+</tr>
+<tr>
+<td>FM radio</td>
+<td class=""last"">C&oacute;</td>
+</tr>
+<tr>
+<td>Chá»©c nÄƒng kh&aacute;c</td>
+<td class=""last"">MÆ¡Ì‰ khoÌa bÄƒÌ€ng v&acirc;n tay</td>
+</tr>
+<tr class=""active"">
+<td colspan=""2""><span>Báº£o h&agrave;nh</span></td>
+</tr>
+<tr>
+<td>M&ocirc; táº£ báº£o h&agrave;nh</td>
+<td class=""last"">Samsung sáº½ k&iacute;ch hoáº¡t báº£o h&agrave;nh sáº£n pháº©m trong v&ograve;ng 10 ng&agrave;y ká»ƒ tá»« ng&agrave;y kh&aacute;ch h&agrave;ng nháº­n Ä‘Æ°á»£c sáº£n pháº©m, náº¿u qu&aacute; 10 ng&agrave;y qu&yacute; kh&aacute;ch h&agrave;ng vui l&ograve;ng li&ecirc;n há»‡ sá»‘ Ä‘iá»‡n thoáº¡i 1900.6035 Ä‘á»ƒ Ä‘Æ°á»£c há»— trá»£. Äá»‹a Ä‘iá»ƒm báº£o h&agrave;nh: http://tiki.vn/tu-van/trung-tam-bao-hanh-chinh-hang-samsung-toan-quoc</td>
+</tr>
+<tr>
+<td>Phá»¥ kiá»‡n Ä‘i k&egrave;m</td>
+<td class=""last"">Há»™p, Sáº¡c, Tai nghe, S&aacute;ch hÆ°á»›ng dáº«n, C&aacute;p, C&acirc;y láº¥y sim</td>
+</tr>
+<tr>
+<td>C&oacute; thuáº¿ VAT</td>
+<td class=""last"">C&oacute;</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>","<div class=""top-feature-item bullet-wrap"">
+                                                                            <p>L?p kính màn hình Sapphire ch?ng tr?y x??c cao</p>
+                                                                            <p>Thi?t k? ??i x?ng tuy?t h?o và sang tr?ng</p>
+                                                                            <p>Màn hình l?n 5.7” Super LCD, tích h?p thêm màn hình hi?n th? th? 2 ti?n d?ng</p>
+                                                                            <p>Dung l??ng c?c kh?ng 128GB m? r?ng không gian l?u tr?</p>
+                                                                            <p>H? ?i?u hành Android 7.0 m?nh m? và m??t mà</p>
+                                                                    </div>",,,,,,,,,30,0,1,0,0,1,1,1,0,1,0,,,1,0,1,0,1,0,1,0,0,0,1,HTC U Ultra Sapphire (128GB) - Hàng Chính Hãng,0,Simple,,,,,,,

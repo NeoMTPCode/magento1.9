@@ -1,0 +1,11 @@
+a:5:{i:0;s:164:"Cannot send headers; headers already sent in F:\xampp\htdocs\shopbing\app\code\local\Mycustom\Adminhtml\controllers\Adminhtml\Catalog\ProductController.php, line 22";i:1;s:1384:"#0 F:\xampp\htdocs\shopbing\lib\Zend\Controller\Response\Abstract.php(148): Zend_Controller_Response_Abstract->canSendHeaders(true)
+#1 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Response\Http.php(107): Zend_Controller_Response_Abstract->setRedirect('http://127.0.0....', 302)
+#2 F:\xampp\htdocs\shopbing\app\code\core\Mage\Adminhtml\Controller\Action.php(348): Mage_Core_Controller_Response_Http->setRedirect('http://127.0.0....')
+#3 F:\xampp\htdocs\shopbing\app\code\local\Mycustom\Adminhtml\controllers\Adminhtml\Catalog\ProductController.php(67): Mage_Adminhtml_Controller_Action->_redirect('*/*/', Array)
+#4 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Mycustom_Adminhtml_Adminhtml_Catalog_ProductController->saveAction()
+#5 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('save')
+#6 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 F:\xampp\htdocs\shopbing\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 F:\xampp\htdocs\shopbing\index.php(83): Mage::run('', 'store')
+#10 {main}";s:3:"url";s:91:"/shopbing/index.php/admin/catalog_product/save/id/154/key/00e547f9c406739223cf44394cb8ad80/";s:11:"script_name";s:19:"/shopbing/index.php";s:4:"skin";s:5:"admin";}

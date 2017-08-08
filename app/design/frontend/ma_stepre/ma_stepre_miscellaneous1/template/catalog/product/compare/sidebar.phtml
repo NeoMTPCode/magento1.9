@@ -1,0 +1,64 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+/* @var $this Mage_Catalog_Block_Product_Compare_Sidebar */
+?>
+<?php
+$_helper = $this->helper('catalog/product_compare');
+$_items = $_helper->getItemCount() > 0 ? $_helper->getItemCollection() : null;
+
+$_product = $this->getProduct();
+
+?>
+<?php if($_product):?>
+<div class="seller-container">
+    <div id="seller-list">
+        <div data-reactroot="">
+            <div class="current-seller" data-id="1">
+                <div class="title">
+                    <span style="width: 60px !important;" class="fa fa-star fa-2x" aria-hidden="true"></span>
+                    <div class="text">Cung cấp bởi<br>
+                        <span>Shopsbing.xyz</span>
+                    </div>
+                </div>
+                <ul class="seller-feature">
+                    <li><span class="fa fa-file-text-o fa-3x"></span>
+                        <div class="content"><span class="title">Hình thức bảo hành</span><b>Hóa đơn</b></div>
+                    </li>
+                    <li><span class="fa fa-shield fa-3x"></span>
+                        <div class="content"><span class="title">Thời gian bảo hành</span>
+                            <b><?php echo $_product->getData("maintenance"); ?> tháng chính hãng tại Việt Nam</b>
+                        </div>
+                    </li>
+                    <li><span class="fa fa-phone fa-3x"></span>
+                        <div class="content"><span class="title">Liên hệ</span><b> HOTLINE: 1900 6035</b><br>(1.000đ/phút, 8-21h cả T7, CN)</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="other-seller" style="display: none;"><p>TỪ NHÀ CUNG CẤP KHÁC</p><ul id="otherSellerList" class="other-seller-list "></ul></div>
+        </div>
+    </div>
+</div>
+<?php endif;?>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mycustom_Checkorder>
+            <version>0.1.0</version>
+        </Mycustom_Checkorder>
+    </modules>
+    <frontend>
+        <routers>
+            <checkorder>
+                <use>standard</use>
+                <args>
+                    <module>Mycustom_Checkorder</module>
+                    <frontName>checkorder</frontName>
+                </args>
+            </checkorder>
+        </routers>
+        <layout>
+            <updates>
+                <checkorder module="Mycustom_Checkorder">
+                    <file>mycustom_checkorder.xml</file>
+                </checkorder>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <checkorder>
+                <class>Mycustom_Checkorder_Block</class>
+            </checkorder>
+        </blocks>
+    </global>
+</config>

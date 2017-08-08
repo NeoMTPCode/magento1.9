@@ -1,0 +1,14 @@
+<div class="top-group">
+	<div class="container">
+		<?php
+			$block = Mage::getModel('cms/block')->setStoreId(Mage::app()->getStore()->getId())->load('static_top');
+			echo Mage::getSingleton('widget/template_filter')->filter($block->getContent());
+		?>
+		<?php  echo $this->getLayout()->createBlock('bestsellerproductslider/bestsellerproductslider')->setTemplate('magentothem/bestsellerproductslider/bestsellerproductslider.phtml')->toHtml(); ?>	
+		<?php
+			$block = Mage::getModel('cms/block')->setStoreId(Mage::app()->getStore()->getId())->load('static_middle');
+			echo Mage::getSingleton('widget/template_filter')->filter($block->getContent());
+		?>
+	</div>
+</div>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<layout>
+    <default>
+        <reference name="head">
+            <action method="addCss">
+                <name>baokim/baokim.css</name>
+            </action>
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>baokim/baokim.css</name>
+            </action>
+        </reference>
+    </default>
+</layout>

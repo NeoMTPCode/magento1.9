@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <helpcenter_index_index translate="label">
+        <label>Helpcenter Customer</label>
+        <remove name="left"/>
+        <remove name="right"/>
+
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="helpcenter.index.index">
+            <reference name="content">
+                <!--<action method="setTemplate">-->
+                    <!--<template>mycustom/helpcenter/index/index.phtml</template>-->
+                <!--</action>-->
+
+                <block type="helpcenter/frontend_index" name="helpcenter.frontend.index" template="mycustom/helpcenter/index/index.phtml" />
+            </reference>
+        </reference>
+    </helpcenter_index_index>
+</layout>

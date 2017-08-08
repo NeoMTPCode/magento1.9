@@ -1,0 +1,288 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<div class="form-add">
+    <h2><?php echo $this->__('Write Your Own Review') ?></h2>
+    <div class="resume-review-content col-md-12" style="border-bottom: 1px solid #e6e6e6 !important;">
+        <div class="product-customer col-md-3 right" style="padding-right: 0; margin-bottom: 15px;">
+            <h4>Chia sẻ nhận xét về sản phẩm</h4>
+            <button type="button" class="btn btn-block btn-default btn-show-form-review">
+                Viết nhận xét của bạn
+            </button>
+        </div>
+    </div>
+    <?php if ($this->getAllowWriteReviewFlag()): ?>
+        <div id="ProductRating" class="review-form__wrap cf" style="display: none;">
+            <form name="review-form" id="review-form" action="<?php echo $this->getAction() ?>" method="post">
+                <input type="hidden" value="008a17cd9584ec2b956a6351d21e3d68728901cc_cc10982786d3e12d1536a659b2ce4859dc71a800" name="FORM_TOKEN">
+                <div class="l-ajaxLoader-box" style="display:none"></div>
+
+<!--                --><?php //foreach ($this->getRatings() as $_rating): ?>
+<!--                    <tr>-->
+<!--                        <th>--><?php //echo $this->escapeHtml($_rating->getRatingCode()) ?><!--</th>-->
+<!--                        --><?php //foreach ($_rating->getOptions() as $_option): ?>
+<!--                            <td class="value"><input type="radio" name="ratings[--><?php //echo $_rating->getId() ?><!--]" id="--><?php //echo $this->escapeHtml($_rating->getRatingCode()) ?><!--_--><?php //echo $_option->getValue() ?><!--" value="--><?php //echo $_option->getId() ?><!--" class="radio" /></td>-->
+<!--                        --><?php //endforeach; ?>
+<!--                    </tr>-->
+<!--                --><?php //endforeach; ?>
+
+                <div class="ratingFormContent col-md-8">
+                    <p class="ratingFormDesc">
+                        Xin vui lòng chia sẻ đánh giá của bạn về sản phẩm này
+                    </p>
+                    <label class="ratingStarsTitle">Nhận xét về sản phẩm này</label>
+                    <div class="ratingStars">
+                        <div class="ratingStarsWrap">
+
+                            <?php foreach ($this->getRatings() as $_rating): ?>
+<!--                                    --><?php //echo $this->escapeHtml($_rating->getRatingCode()) ?>
+                                    <?php foreach ($_rating->getOptions() as $_option): ?>
+                                        <input type="radio"
+                                               name="ratings[<?php echo $_rating->getId() ?>]"
+                                               id="<?php echo $this->escapeHtml($_rating->getRatingCode()) ?>_<?php echo $_option->getValue() ?>"
+                                               value="<?php echo $_option->getId() ?>"
+                                               class="star <?php if(end($_rating->getOptions()) == $_option) echo 'validate-one-required';?>" />
+                                    <label class="star" for="<?php echo $this->escapeHtml($_rating->getRatingCode()) ?>_<?php echo $_option->getValue() ?>"></label>
+                                <?php endforeach; ?>
+                            <?php endforeach; ?>
+                        </div>
+                        <span class="ratingStarsHint">Nhấn vào đây để đánh giá</span>
+                    </div>
+
+                    <div style="clear:both" id="ProductRatingFormSender" class="clearfix ratRev_reviewFields">
+                        <div class="ratRev_form_row form-group">
+                            <label>Tiêu đề đánh giá (tùy chọn)</label>
+                            <input class="ui-inputText col-md-12 required-entry" name="title" id="summary_field" placeholder="Nhập tiêu đề nhận xét tại đây" type="text">
+                            <div class="s-error ratRev-errorMsg error-title" style="display:none"> </div>
+                        </div>
+
+                        <div class="ratRev_form_row hasNote form-group">
+                            <label>Mô tả đánh giá</label>
+                            <textarea class="required ui-inputText col-md-12 required-entry" placeholder="Nhập mô tả tại đây" name="detail" id="review_field" rows="7"></textarea>
+                            <div class="s-error ratRev-errorMsg error-comment" style="display:none"></div>
+                            <div class="ratRev_form_row__desc text-right">
+                                Nhận xét của <strong><?php echo Mage::helper('customer')->getCustomerName();?></strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ProductRatingFormAction" class="ratRev_actionBox">
+                        <input type="hidden" name="rating-sku" value="SA937ELAA1O0RYVNAMZ">
+                        <input type="hidden" name="RatingForm[name]" value="TrầnCôngDũng">
+                        <input type="hidden" name="RatingForm[email]" value="">
+                        <input type="hidden" name="utm_medium" value="">
+
+                        <div class="review-form__submit-block text-right">
+                            <input id="ProductRatingFormAction_submit" class="ui-button ui-buttonCta" type="submit" name="rating-submit" value="Gửi nhận xét">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="ratingFormAside col-md-4">
+                    <!--- Start CMS desktop_guide_write_review-->
+                    <h3>Để viết 1 đánh giá chất lượng</h3>
+                    <h4>Bạn nên:</h4>
+                    <ul>
+                        <li>Chỉ đánh giá về sản phẩm và đặc tính của nó.</li>
+                        <li>Viết đánh giá dựa trên kinh nghiệm của bản thân.</li>
+                        <li>Cho Shopbing biết "tại sao" bạn lại cảm thấy như vậy về sản phẩm.</li>
+                    </ul>
+                    <br>
+                    <h4>Bạn không nên:</h4>
+                    <ul>
+                        <li>Chia sẻ những thông tin không liên quan đến sản phẩm.</li>
+                        <li>Chia sẻ thông tin không xác thực, dễ gây hiểu lầm và mang tính chất lừa đảo.</li>
+                        <li>Chửi thề, đe dọa, hay sử dụng những từ ngữ không có văn hóa, phân biệt chủng tộc.</li>
+                        <li>Chia sẻ bất kỳ thông tin cá nhân nào.</li>
+                        <li>Đưa ra đường link không phải của Shopbing.</li>
+                        <li>Sử dụng trái phép những thông tin liên quan đến bản quyền và thương hiệu.</li>
+                    </ul>
+
+                    <!--- End CMS desktop_guide_write_review-->
+                </div>
+            </form>
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var dataForm = new VarienForm('review-form');
+//            Validation.addAllThese(
+//                [
+//                    ['validate-rating', '<?php //echo Mage::helper('core')->jsQuoteEscape($this->__('Please select one of each of the ratings above')) ?>//', function(v) {
+//                        var trs = $('product-review-table').select('tr');
+//                        var inputs;
+//                        var error = 1;
+//
+//                        for( var j=0; j < trs.length; j++ ) {
+//                            var tr = trs[j];
+//                            if( j > 0 ) {
+//                                inputs = tr.select('input');
+//
+//                                for( i in inputs ) {
+//                                    if( inputs[i].checked == true ) {
+//                                        error = 0;
+//                                    }
+//                                }
+//
+//                                if( error == 1 ) {
+//                                    return false;
+//                                } else {
+//                                    error = 1;
+//                                }
+//                            }
+//                        }
+//                        return true;
+//                    }]
+//                ]
+//            );
+            //]]>
+        </script>
+    <?php else: ?>
+        <p class="review-nologged" id="review-form">
+            <?php echo $this->__('Only registered users can write reviews. Please, <a href="%s">log in</a> or <a href="%s">register</a>', $this->getLoginLink(), Mage::helper('customer')->getRegisterUrl()) ?>
+        </p>
+    <?php endif ?>
+</div>
+<!-- Modal -->
+<div id="modal-require-login" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Vui lòng đăng nhập để nhận xét</h4>
+            </div>
+            <div class="modal-footer">
+                <a class="btn btn-default" href="<?php echo $this->getUrl('customer/account/login') ?>"><?php echo $this->__('Đăng nhập') ?> <i class="fa fa-angle-down">&nbsp;</i></a>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    div.stars {
+        width: 180px;
+        display: inline-block;
+    }
+
+    input.star { display: none; }
+
+    .ratingStarsWrap {
+        unicode-bidi: bidi-override;
+        direction: rtl;
+        float: left;
+    }
+    label.star {
+        padding: 5px;
+        font-size: 26px;
+        color: #444;
+        transition: all .2s;
+    }
+
+    input.star:checked ~ label.star:before {
+        content: '\f005';
+        color: #FD4;
+        transition: all .25s;
+    }
+
+    /*input.star-5:checked ~ label.star:before {*/
+        /*color: #FE7;*/
+        /*text-shadow: 0 0 20px #952;*/
+    /*}*/
+
+    /*input.star-1:checked ~ label.star:before { color: #F62; }*/
+    /*label.star:hover,  { transform: rotate(-15deg) scale(1.3); }*/
+
+    .ratingStarsWrap > input:checked ~ label, /* show gold star when clicked */
+    .ratingStarsWrap:not(:checked) > label:hover, /* hover current star */
+    .ratingStarsWrap:not(:checked) > label:hover ~ label { color: #FFD700;  } /* hover previous stars in list */
+
+    .ratingStarsWrap > input:checked + label:hover, /* hover current star when changing rating */
+    .ratingStarsWrap > input:checked ~ label:hover,
+    .ratingStarsWrap > label:hover ~ input:checked ~ label, /* lighten current selection */
+    .ratingStarsWrap > input:checked ~ label:hover ~ label { color: #FFED85;  }
+
+    label.star:before {
+        content: '\f006';
+        font-family: FontAwesome;
+    }
+
+    .ratingStarsHint {
+        display: inline-block;
+        font-size: 12px;
+        color: #fff;
+        margin-left: 100px;
+        line-height: 25px;
+        padding: 2px 25px 0;
+        background-color: #8b9aa2;
+        margin-top: 3px;
+        position: relative;
+    }
+    .ratingStarsHint:before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-bottom: 13px solid transparent;
+        border-top: 13px solid transparent;
+        border-right: 13px solid #8b9aa2;
+        position: absolute;
+        left: -13px;
+        top: 0;
+    }
+    #ProductRatingFormSender label{
+        width:100%;
+    }
+    #ProductRatingFormAction_submit, .btn-show-form-review{
+        font-weight: 500;
+        font-size: 13px;
+        height: 40px;
+        background: #fdd22f;
+        border: 0;
+        color: #333;
+        width: 229px;
+        margin-top: 15px;
+        float: right;
+    }
+</style>
+
+<script>
+
+    jQuery('.btn-show-form-review').click(function () {
+        var checkLogin = '<?php if(!Mage::getSingleton('customer/session')->isLoggedIn()) echo 'false'; else echo 'true'?>';
+        if(checkLogin == 'false'){
+            jQuery('#modal-require-login').modal('show');
+            return;
+        }
+        if(jQuery(this).html() != 'Đóng'){
+            jQuery('#ProductRating').show();
+            jQuery(this).html('Đóng');
+        }else{
+            jQuery('#ProductRating').hide();
+            jQuery(this).html('Viết nhận xét của bạn');
+        }
+    });
+</script>

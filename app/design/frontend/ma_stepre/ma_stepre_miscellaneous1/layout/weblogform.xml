@@ -1,0 +1,12 @@
+<layout version="0.1.0">
+    <default>
+        <reference name="content">
+        </reference>
+    </default>
+
+    <weblog_index_index>
+        <reference name="content">
+            <block type="magentotutorial_weblog/monblock"  name="form_monblock" template="magentotutorial_weblog/form.phtml" />
+        </reference>
+    </weblog_index_index>
+</layout>

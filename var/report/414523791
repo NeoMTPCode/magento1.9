@@ -1,0 +1,2284 @@
+a:5:{i:0;s:144473:"Invalid method Mycustom_Adminhtml_Model_Order_Pdf_Barcode::insertSignText(Array
+(
+    [0] => Zend_Pdf_Page Object
+        (
+            [_dictionary:protected] => Zend_Pdf_Element_Object Object
+                (
+                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                        (
+                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                (
+                                    [Type] => Zend_Pdf_Element_Name Object
+                                        (
+                                            [value] => Page
+                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                        )
+
+                                    [LastModified] => Zend_Pdf_Element_String Object
+                                        (
+                                            [value] => D:20170627161918+00'00'
+                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                        )
+
+                                    [Resources] => Zend_Pdf_Element_Dictionary Object
+                                        (
+                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                (
+                                                    [ProcSet] => Zend_Pdf_Element_Array Object
+                                                        (
+                                                            [items] => ArrayObject Object
+                                                                (
+                                                                    [storage:ArrayObject:private] => Array
+                                                                        (
+                                                                            [0] => Zend_Pdf_Element_Name Object
+                                                                                (
+                                                                                    [value] => Text
+                                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                )
+
+                                                                        )
+
+                                                                )
+
+                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                        )
+
+                                                    [Font] => Zend_Pdf_Element_Dictionary Object
+                                                        (
+                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                (
+                                                                    [F1] => Zend_Pdf_Element_Object Object
+                                                                        (
+                                                                            [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                                                (
+                                                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                        (
+                                                                                            [Type] => Zend_Pdf_Element_Name Object
+                                                                                                (
+                                                                                                    [value] => Font
+                                                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                )
+
+                                                                                            [Encoding] => Zend_Pdf_Element_Name Object
+                                                                                                (
+                                                                                                    [value] => WinAnsiEncoding
+                                                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                )
+
+                                                                                            [Subtype] => Zend_Pdf_Element_Name Object
+                                                                                                (
+                                                                                                    [value] => Type1
+                                                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                )
+
+                                                                                            [BaseFont] => Zend_Pdf_Element_Name Object
+                                                                                                (
+                                                                                                    [value] => Helvetica
+                                                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                )
+
+                                                                                        )
+
+                                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                )
+
+                                                                            [_objNum:protected] => 1
+                                                                            [_genNum:protected] => 0
+                                                                            [_factory:protected] => Zend_Pdf_ElementFactory Object
+                                                                                (
+                                                                                    [_modifiedObjects:Zend_Pdf_ElementFactory:private] => Array
+                                                                                        (
+                                                                                            [1] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                                        )
+
+                                                                                    [_removedObjects:Zend_Pdf_ElementFactory:private] => SplObjectStorage Object
+                                                                                        (
+                                                                                            [storage:SplObjectStorage:private] => Array
+                                                                                                (
+                                                                                                )
+
+                                                                                        )
+
+                                                                                    [_registeredObjects:Zend_Pdf_ElementFactory:private] => Array
+                                                                                        (
+                                                                                            [1 0] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                                        )
+
+                                                                                    [_objectCount:Zend_Pdf_ElementFactory:private] => 2
+                                                                                    [_attachedFactories:Zend_Pdf_ElementFactory:private] => Array
+                                                                                        (
+                                                                                        )
+
+                                                                                    [_factoryId:Zend_Pdf_ElementFactory:private] => 1
+                                                                                    [_shiftCalculationCache:Zend_Pdf_ElementFactory:private] => Array
+                                                                                        (
+                                                                                        )
+
+                                                                                )
+
+                                                                            [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                        )
+
+                                                                )
+
+                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                        )
+
+                                                )
+
+                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                        )
+
+                                    [MediaBox] => Zend_Pdf_Element_Array Object
+                                        (
+                                            [items] => ArrayObject Object
+                                                (
+                                                    [storage:ArrayObject:private] => Array
+                                                        (
+                                                            [0] => Zend_Pdf_Element_Numeric Object
+                                                                (
+                                                                    [value] => 0
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [1] => Zend_Pdf_Element_Numeric Object
+                                                                (
+                                                                    [value] => 0
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [2] => Zend_Pdf_Element_Numeric Object
+                                                                (
+                                                                    [value] => 595
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [3] => Zend_Pdf_Element_Numeric Object
+                                                                (
+                                                                    [value] => 842
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                        )
+
+                                                )
+
+                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                        )
+
+                                    [Contents] => Zend_Pdf_Element_Array Object
+                                        (
+                                            [items] => ArrayObject Object
+                                                (
+                                                    [storage:ArrayObject:private] => Array
+                                                        (
+                                                        )
+
+                                                )
+
+                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                        )
+
+                                )
+
+                            [_parentObject:Zend_Pdf_Element:private] => 
+                        )
+
+                    [_objNum:protected] => 3
+                    [_genNum:protected] => 0
+                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+                        (
+                            [_modifiedObjects:Zend_Pdf_ElementFactory:private] => Array
+                                (
+                                    [1] => Zend_Pdf_Element_Object Object
+                                        (
+                                            [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                (
+                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                        (
+                                                            [Type] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => Catalog
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Version] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => 1.4
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Pages] => Zend_Pdf_Element_Object Object
+                                                                (
+                                                                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                                        (
+                                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                (
+                                                                                    [Type] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Pages
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Kids] => Zend_Pdf_Element_Array Object
+                                                                                        (
+                                                                                            [items] => ArrayObject Object
+                                                                                                (
+                                                                                                    [storage:ArrayObject:private] => Array
+                                                                                                        (
+                                                                                                        )
+
+                                                                                                )
+
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Count] => Zend_Pdf_Element_Numeric Object
+                                                                                        (
+                                                                                            [value] => 0
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                )
+
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [_objNum:protected] => 2
+                                                                    [_genNum:protected] => 0
+                                                                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                                                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                )
+
+                                                        )
+
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [_objNum:protected] => 1
+                                            [_genNum:protected] => 0
+                                            [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                            [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                        )
+
+                                    [2] => Zend_Pdf_Element_Object Object
+                                        (
+                                            [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                (
+                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                        (
+                                                            [Type] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => Pages
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Kids] => Zend_Pdf_Element_Array Object
+                                                                (
+                                                                    [items] => ArrayObject Object
+                                                                        (
+                                                                            [storage:ArrayObject:private] => Array
+                                                                                (
+                                                                                )
+
+                                                                        )
+
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Count] => Zend_Pdf_Element_Numeric Object
+                                                                (
+                                                                    [value] => 0
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                        )
+
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [_objNum:protected] => 2
+                                            [_genNum:protected] => 0
+                                            [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                            [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                        )
+
+                                    [3] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                )
+
+                            [_removedObjects:Zend_Pdf_ElementFactory:private] => SplObjectStorage Object
+                                (
+                                    [storage:SplObjectStorage:private] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [_registeredObjects:Zend_Pdf_ElementFactory:private] => Array
+                                (
+                                    [1 0] => Zend_Pdf_Element_Object Object
+                                        (
+                                            [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                (
+                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                        (
+                                                            [Type] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => Catalog
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Version] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => 1.4
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Pages] => Zend_Pdf_Element_Object Object
+                                                                (
+                                                                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                                        (
+                                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                (
+                                                                                    [Type] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Pages
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Kids] => Zend_Pdf_Element_Array Object
+                                                                                        (
+                                                                                            [items] => ArrayObject Object
+                                                                                                (
+                                                                                                    [storage:ArrayObject:private] => Array
+                                                                                                        (
+                                                                                                        )
+
+                                                                                                )
+
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Count] => Zend_Pdf_Element_Numeric Object
+                                                                                        (
+                                                                                            [value] => 0
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                )
+
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [_objNum:protected] => 2
+                                                                    [_genNum:protected] => 0
+                                                                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                                                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                )
+
+                                                        )
+
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [_objNum:protected] => 1
+                                            [_genNum:protected] => 0
+                                            [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                            [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                        )
+
+                                    [2 0] => Zend_Pdf_Element_Object Object
+                                        (
+                                            [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                (
+                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                        (
+                                                            [Type] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => Pages
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Kids] => Zend_Pdf_Element_Array Object
+                                                                (
+                                                                    [items] => ArrayObject Object
+                                                                        (
+                                                                            [storage:ArrayObject:private] => Array
+                                                                                (
+                                                                                )
+
+                                                                        )
+
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Count] => Zend_Pdf_Element_Numeric Object
+                                                                (
+                                                                    [value] => 0
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                        )
+
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [_objNum:protected] => 2
+                                            [_genNum:protected] => 0
+                                            [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                            [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                        )
+
+                                    [3 0] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                )
+
+                            [_objectCount:Zend_Pdf_ElementFactory:private] => 4
+                            [_attachedFactories:Zend_Pdf_ElementFactory:private] => Array
+                                (
+                                    [1] => Zend_Pdf_ElementFactory_Proxy Object
+                                        (
+                                            [_factory:Zend_Pdf_ElementFactory_Proxy:private] => Zend_Pdf_ElementFactory Object
+                                                (
+                                                    [_modifiedObjects:Zend_Pdf_ElementFactory:private] => Array
+                                                        (
+                                                            [1] => Zend_Pdf_Element_Object Object
+                                                                (
+                                                                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                                        (
+                                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                (
+                                                                                    [Type] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Font
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Encoding] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => WinAnsiEncoding
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Subtype] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Type1
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [BaseFont] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Helvetica
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                )
+
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [_objNum:protected] => 1
+                                                                    [_genNum:protected] => 0
+                                                                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                                                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                )
+
+                                                        )
+
+                                                    [_removedObjects:Zend_Pdf_ElementFactory:private] => SplObjectStorage Object
+                                                        (
+                                                            [storage:SplObjectStorage:private] => Array
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_registeredObjects:Zend_Pdf_ElementFactory:private] => Array
+                                                        (
+                                                            [1 0] => Zend_Pdf_Element_Object Object
+                                                                (
+                                                                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                                        (
+                                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                (
+                                                                                    [Type] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Font
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Encoding] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => WinAnsiEncoding
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Subtype] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Type1
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [BaseFont] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Helvetica
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                )
+
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [_objNum:protected] => 1
+                                                                    [_genNum:protected] => 0
+                                                                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                                                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                )
+
+                                                        )
+
+                                                    [_objectCount:Zend_Pdf_ElementFactory:private] => 2
+                                                    [_attachedFactories:Zend_Pdf_ElementFactory:private] => Array
+                                                        (
+                                                        )
+
+                                                    [_factoryId:Zend_Pdf_ElementFactory:private] => 1
+                                                    [_shiftCalculationCache:Zend_Pdf_ElementFactory:private] => Array
+                                                        (
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                            [_factoryId:Zend_Pdf_ElementFactory:private] => 0
+                            [_shiftCalculationCache:Zend_Pdf_ElementFactory:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                )
+
+            [_objFactory:protected] => Zend_Pdf_ElementFactory_Proxy Object
+                (
+                    [_factory:Zend_Pdf_ElementFactory_Proxy:private] => Zend_Pdf_ElementFactory Object
+                        (
+                            [_modifiedObjects:Zend_Pdf_ElementFactory:private] => Array
+                                (
+                                    [1] => Zend_Pdf_Element_Object Object
+                                        (
+                                            [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                (
+                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                        (
+                                                            [Type] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => Catalog
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Version] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => 1.4
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Pages] => Zend_Pdf_Element_Object Object
+                                                                (
+                                                                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                                        (
+                                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                (
+                                                                                    [Type] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Pages
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Kids] => Zend_Pdf_Element_Array Object
+                                                                                        (
+                                                                                            [items] => ArrayObject Object
+                                                                                                (
+                                                                                                    [storage:ArrayObject:private] => Array
+                                                                                                        (
+                                                                                                        )
+
+                                                                                                )
+
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Count] => Zend_Pdf_Element_Numeric Object
+                                                                                        (
+                                                                                            [value] => 0
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                )
+
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [_objNum:protected] => 2
+                                                                    [_genNum:protected] => 0
+                                                                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                                                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                )
+
+                                                        )
+
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [_objNum:protected] => 1
+                                            [_genNum:protected] => 0
+                                            [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                            [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                        )
+
+                                    [2] => Zend_Pdf_Element_Object Object
+                                        (
+                                            [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                (
+                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                        (
+                                                            [Type] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => Pages
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Kids] => Zend_Pdf_Element_Array Object
+                                                                (
+                                                                    [items] => ArrayObject Object
+                                                                        (
+                                                                            [storage:ArrayObject:private] => Array
+                                                                                (
+                                                                                )
+
+                                                                        )
+
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Count] => Zend_Pdf_Element_Numeric Object
+                                                                (
+                                                                    [value] => 0
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                        )
+
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [_objNum:protected] => 2
+                                            [_genNum:protected] => 0
+                                            [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                            [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                        )
+
+                                    [3] => Zend_Pdf_Element_Object Object
+                                        (
+                                            [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                (
+                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                        (
+                                                            [Type] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => Page
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [LastModified] => Zend_Pdf_Element_String Object
+                                                                (
+                                                                    [value] => D:20170627161918+00'00'
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Resources] => Zend_Pdf_Element_Dictionary Object
+                                                                (
+                                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                        (
+                                                                            [ProcSet] => Zend_Pdf_Element_Array Object
+                                                                                (
+                                                                                    [items] => ArrayObject Object
+                                                                                        (
+                                                                                            [storage:ArrayObject:private] => Array
+                                                                                                (
+                                                                                                    [0] => Zend_Pdf_Element_Name Object
+                                                                                                        (
+                                                                                                            [value] => Text
+                                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                        )
+
+                                                                                                )
+
+                                                                                        )
+
+                                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                )
+
+                                                                            [Font] => Zend_Pdf_Element_Dictionary Object
+                                                                                (
+                                                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                        (
+                                                                                            [F1] => Zend_Pdf_Element_Object Object
+                                                                                                (
+                                                                                                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                                                                        (
+                                                                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                                                (
+                                                                                                                    [Type] => Zend_Pdf_Element_Name Object
+                                                                                                                        (
+                                                                                                                            [value] => Font
+                                                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                                        )
+
+                                                                                                                    [Encoding] => Zend_Pdf_Element_Name Object
+                                                                                                                        (
+                                                                                                                            [value] => WinAnsiEncoding
+                                                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                                        )
+
+                                                                                                                    [Subtype] => Zend_Pdf_Element_Name Object
+                                                                                                                        (
+                                                                                                                            [value] => Type1
+                                                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                                        )
+
+                                                                                                                    [BaseFont] => Zend_Pdf_Element_Name Object
+                                                                                                                        (
+                                                                                                                            [value] => Helvetica
+                                                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                                        )
+
+                                                                                                                )
+
+                                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                        )
+
+                                                                                                    [_objNum:protected] => 1
+                                                                                                    [_genNum:protected] => 0
+                                                                                                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+                                                                                                        (
+                                                                                                            [_modifiedObjects:Zend_Pdf_ElementFactory:private] => Array
+                                                                                                                (
+                                                                                                                    [1] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                                                                )
+
+                                                                                                            [_removedObjects:Zend_Pdf_ElementFactory:private] => SplObjectStorage Object
+                                                                                                                (
+                                                                                                                    [storage:SplObjectStorage:private] => Array
+                                                                                                                        (
+                                                                                                                        )
+
+                                                                                                                )
+
+                                                                                                            [_registeredObjects:Zend_Pdf_ElementFactory:private] => Array
+                                                                                                                (
+                                                                                                                    [1 0] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                                                                )
+
+                                                                                                            [_objectCount:Zend_Pdf_ElementFactory:private] => 2
+                                                                                                            [_attachedFactories:Zend_Pdf_ElementFactory:private] => Array
+                                                                                                                (
+                                                                                                                )
+
+                                                                                                            [_factoryId:Zend_Pdf_ElementFactory:private] => 1
+                                                                                                            [_shiftCalculationCache:Zend_Pdf_ElementFactory:private] => Array
+                                                                                                                (
+                                                                                                                )
+
+                                                                                                        )
+
+                                                                                                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                                                )
+
+                                                                                        )
+
+                                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                )
+
+                                                                        )
+
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [MediaBox] => Zend_Pdf_Element_Array Object
+                                                                (
+                                                                    [items] => ArrayObject Object
+                                                                        (
+                                                                            [storage:ArrayObject:private] => Array
+                                                                                (
+                                                                                    [0] => Zend_Pdf_Element_Numeric Object
+                                                                                        (
+                                                                                            [value] => 0
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [1] => Zend_Pdf_Element_Numeric Object
+                                                                                        (
+                                                                                            [value] => 0
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [2] => Zend_Pdf_Element_Numeric Object
+                                                                                        (
+                                                                                            [value] => 595
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [3] => Zend_Pdf_Element_Numeric Object
+                                                                                        (
+                                                                                            [value] => 842
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                )
+
+                                                                        )
+
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Contents] => Zend_Pdf_Element_Array Object
+                                                                (
+                                                                    [items] => ArrayObject Object
+                                                                        (
+                                                                            [storage:ArrayObject:private] => Array
+                                                                                (
+                                                                                )
+
+                                                                        )
+
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                        )
+
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [_objNum:protected] => 3
+                                            [_genNum:protected] => 0
+                                            [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                            [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                        )
+
+                                )
+
+                            [_removedObjects:Zend_Pdf_ElementFactory:private] => SplObjectStorage Object
+                                (
+                                    [storage:SplObjectStorage:private] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [_registeredObjects:Zend_Pdf_ElementFactory:private] => Array
+                                (
+                                    [1 0] => Zend_Pdf_Element_Object Object
+                                        (
+                                            [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                (
+                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                        (
+                                                            [Type] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => Catalog
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Version] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => 1.4
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Pages] => Zend_Pdf_Element_Object Object
+                                                                (
+                                                                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                                        (
+                                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                (
+                                                                                    [Type] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Pages
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Kids] => Zend_Pdf_Element_Array Object
+                                                                                        (
+                                                                                            [items] => ArrayObject Object
+                                                                                                (
+                                                                                                    [storage:ArrayObject:private] => Array
+                                                                                                        (
+                                                                                                        )
+
+                                                                                                )
+
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Count] => Zend_Pdf_Element_Numeric Object
+                                                                                        (
+                                                                                            [value] => 0
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                )
+
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [_objNum:protected] => 2
+                                                                    [_genNum:protected] => 0
+                                                                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                                                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                )
+
+                                                        )
+
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [_objNum:protected] => 1
+                                            [_genNum:protected] => 0
+                                            [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                            [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                        )
+
+                                    [2 0] => Zend_Pdf_Element_Object Object
+                                        (
+                                            [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                (
+                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                        (
+                                                            [Type] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => Pages
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Kids] => Zend_Pdf_Element_Array Object
+                                                                (
+                                                                    [items] => ArrayObject Object
+                                                                        (
+                                                                            [storage:ArrayObject:private] => Array
+                                                                                (
+                                                                                )
+
+                                                                        )
+
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Count] => Zend_Pdf_Element_Numeric Object
+                                                                (
+                                                                    [value] => 0
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                        )
+
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [_objNum:protected] => 2
+                                            [_genNum:protected] => 0
+                                            [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                            [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                        )
+
+                                    [3 0] => Zend_Pdf_Element_Object Object
+                                        (
+                                            [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                (
+                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                        (
+                                                            [Type] => Zend_Pdf_Element_Name Object
+                                                                (
+                                                                    [value] => Page
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [LastModified] => Zend_Pdf_Element_String Object
+                                                                (
+                                                                    [value] => D:20170627161918+00'00'
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Resources] => Zend_Pdf_Element_Dictionary Object
+                                                                (
+                                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                        (
+                                                                            [ProcSet] => Zend_Pdf_Element_Array Object
+                                                                                (
+                                                                                    [items] => ArrayObject Object
+                                                                                        (
+                                                                                            [storage:ArrayObject:private] => Array
+                                                                                                (
+                                                                                                    [0] => Zend_Pdf_Element_Name Object
+                                                                                                        (
+                                                                                                            [value] => Text
+                                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                        )
+
+                                                                                                )
+
+                                                                                        )
+
+                                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                )
+
+                                                                            [Font] => Zend_Pdf_Element_Dictionary Object
+                                                                                (
+                                                                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                        (
+                                                                                            [F1] => Zend_Pdf_Element_Object Object
+                                                                                                (
+                                                                                                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                                                                        (
+                                                                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                                                (
+                                                                                                                    [Type] => Zend_Pdf_Element_Name Object
+                                                                                                                        (
+                                                                                                                            [value] => Font
+                                                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                                        )
+
+                                                                                                                    [Encoding] => Zend_Pdf_Element_Name Object
+                                                                                                                        (
+                                                                                                                            [value] => WinAnsiEncoding
+                                                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                                        )
+
+                                                                                                                    [Subtype] => Zend_Pdf_Element_Name Object
+                                                                                                                        (
+                                                                                                                            [value] => Type1
+                                                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                                        )
+
+                                                                                                                    [BaseFont] => Zend_Pdf_Element_Name Object
+                                                                                                                        (
+                                                                                                                            [value] => Helvetica
+                                                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                                        )
+
+                                                                                                                )
+
+                                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                                        )
+
+                                                                                                    [_objNum:protected] => 1
+                                                                                                    [_genNum:protected] => 0
+                                                                                                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+                                                                                                        (
+                                                                                                            [_modifiedObjects:Zend_Pdf_ElementFactory:private] => Array
+                                                                                                                (
+                                                                                                                    [1] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                                                                )
+
+                                                                                                            [_removedObjects:Zend_Pdf_ElementFactory:private] => SplObjectStorage Object
+                                                                                                                (
+                                                                                                                    [storage:SplObjectStorage:private] => Array
+                                                                                                                        (
+                                                                                                                        )
+
+                                                                                                                )
+
+                                                                                                            [_registeredObjects:Zend_Pdf_ElementFactory:private] => Array
+                                                                                                                (
+                                                                                                                    [1 0] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                                                                )
+
+                                                                                                            [_objectCount:Zend_Pdf_ElementFactory:private] => 2
+                                                                                                            [_attachedFactories:Zend_Pdf_ElementFactory:private] => Array
+                                                                                                                (
+                                                                                                                )
+
+                                                                                                            [_factoryId:Zend_Pdf_ElementFactory:private] => 1
+                                                                                                            [_shiftCalculationCache:Zend_Pdf_ElementFactory:private] => Array
+                                                                                                                (
+                                                                                                                )
+
+                                                                                                        )
+
+                                                                                                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                                                )
+
+                                                                                        )
+
+                                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                )
+
+                                                                        )
+
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [MediaBox] => Zend_Pdf_Element_Array Object
+                                                                (
+                                                                    [items] => ArrayObject Object
+                                                                        (
+                                                                            [storage:ArrayObject:private] => Array
+                                                                                (
+                                                                                    [0] => Zend_Pdf_Element_Numeric Object
+                                                                                        (
+                                                                                            [value] => 0
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [1] => Zend_Pdf_Element_Numeric Object
+                                                                                        (
+                                                                                            [value] => 0
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [2] => Zend_Pdf_Element_Numeric Object
+                                                                                        (
+                                                                                            [value] => 595
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [3] => Zend_Pdf_Element_Numeric Object
+                                                                                        (
+                                                                                            [value] => 842
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                )
+
+                                                                        )
+
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                            [Contents] => Zend_Pdf_Element_Array Object
+                                                                (
+                                                                    [items] => ArrayObject Object
+                                                                        (
+                                                                            [storage:ArrayObject:private] => Array
+                                                                                (
+                                                                                )
+
+                                                                        )
+
+                                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                                )
+
+                                                        )
+
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [_objNum:protected] => 3
+                                            [_genNum:protected] => 0
+                                            [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                            [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                        )
+
+                                )
+
+                            [_objectCount:Zend_Pdf_ElementFactory:private] => 4
+                            [_attachedFactories:Zend_Pdf_ElementFactory:private] => Array
+                                (
+                                    [1] => Zend_Pdf_ElementFactory_Proxy Object
+                                        (
+                                            [_factory:Zend_Pdf_ElementFactory_Proxy:private] => Zend_Pdf_ElementFactory Object
+                                                (
+                                                    [_modifiedObjects:Zend_Pdf_ElementFactory:private] => Array
+                                                        (
+                                                            [1] => Zend_Pdf_Element_Object Object
+                                                                (
+                                                                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                                        (
+                                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                (
+                                                                                    [Type] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Font
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Encoding] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => WinAnsiEncoding
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Subtype] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Type1
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [BaseFont] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Helvetica
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                )
+
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [_objNum:protected] => 1
+                                                                    [_genNum:protected] => 0
+                                                                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                                                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                )
+
+                                                        )
+
+                                                    [_removedObjects:Zend_Pdf_ElementFactory:private] => SplObjectStorage Object
+                                                        (
+                                                            [storage:SplObjectStorage:private] => Array
+                                                                (
+                                                                )
+
+                                                        )
+
+                                                    [_registeredObjects:Zend_Pdf_ElementFactory:private] => Array
+                                                        (
+                                                            [1 0] => Zend_Pdf_Element_Object Object
+                                                                (
+                                                                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                                        (
+                                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                                (
+                                                                                    [Type] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Font
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Encoding] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => WinAnsiEncoding
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [Subtype] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Type1
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                    [BaseFont] => Zend_Pdf_Element_Name Object
+                                                                                        (
+                                                                                            [value] => Helvetica
+                                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                                        )
+
+                                                                                )
+
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [_objNum:protected] => 1
+                                                                    [_genNum:protected] => 0
+                                                                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                                                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                                )
+
+                                                        )
+
+                                                    [_objectCount:Zend_Pdf_ElementFactory:private] => 2
+                                                    [_attachedFactories:Zend_Pdf_ElementFactory:private] => Array
+                                                        (
+                                                        )
+
+                                                    [_factoryId:Zend_Pdf_ElementFactory:private] => 1
+                                                    [_shiftCalculationCache:Zend_Pdf_ElementFactory:private] => Array
+                                                        (
+                                                        )
+
+                                                )
+
+                                        )
+
+                                )
+
+                            [_factoryId:Zend_Pdf_ElementFactory:private] => 0
+                            [_shiftCalculationCache:Zend_Pdf_ElementFactory:private] => Array
+                                (
+                                )
+
+                        )
+
+                )
+
+            [_attached:protected] => 
+            [_safeGS:protected] => 1
+            [_contents:protected] => /F1 11 Tf
+BT
+30 800 Td
+(5) Tj
+ET
+
+            [_font:protected] => Zend_Pdf_Resource_Font_Simple_Standard_Helvetica Object
+                (
+                    [_cmap:protected] => Zend_Pdf_Cmap_ByteEncoding_Static Object
+                        (
+                            [_glyphIndexArray:protected] => Array
+                                (
+                                    [32] => 1
+                                    [33] => 2
+                                    [34] => 3
+                                    [35] => 4
+                                    [36] => 5
+                                    [37] => 6
+                                    [38] => 7
+                                    [8217] => 8
+                                    [40] => 9
+                                    [41] => 10
+                                    [42] => 11
+                                    [43] => 12
+                                    [44] => 13
+                                    [45] => 14
+                                    [46] => 15
+                                    [47] => 16
+                                    [48] => 17
+                                    [49] => 18
+                                    [50] => 19
+                                    [51] => 20
+                                    [52] => 21
+                                    [53] => 22
+                                    [54] => 23
+                                    [55] => 24
+                                    [56] => 25
+                                    [57] => 26
+                                    [58] => 27
+                                    [59] => 28
+                                    [60] => 29
+                                    [61] => 30
+                                    [62] => 31
+                                    [63] => 32
+                                    [64] => 33
+                                    [65] => 34
+                                    [66] => 35
+                                    [67] => 36
+                                    [68] => 37
+                                    [69] => 38
+                                    [70] => 39
+                                    [71] => 40
+                                    [72] => 41
+                                    [73] => 42
+                                    [74] => 43
+                                    [75] => 44
+                                    [76] => 45
+                                    [77] => 46
+                                    [78] => 47
+                                    [79] => 48
+                                    [80] => 49
+                                    [81] => 50
+                                    [82] => 51
+                                    [83] => 52
+                                    [84] => 53
+                                    [85] => 54
+                                    [86] => 55
+                                    [87] => 56
+                                    [88] => 57
+                                    [89] => 58
+                                    [90] => 59
+                                    [91] => 60
+                                    [92] => 61
+                                    [93] => 62
+                                    [94] => 63
+                                    [95] => 64
+                                    [8216] => 65
+                                    [97] => 66
+                                    [98] => 67
+                                    [99] => 68
+                                    [100] => 69
+                                    [101] => 70
+                                    [102] => 71
+                                    [103] => 72
+                                    [104] => 73
+                                    [105] => 74
+                                    [106] => 75
+                                    [107] => 76
+                                    [108] => 77
+                                    [109] => 78
+                                    [110] => 79
+                                    [111] => 80
+                                    [112] => 81
+                                    [113] => 82
+                                    [114] => 83
+                                    [115] => 84
+                                    [116] => 85
+                                    [117] => 86
+                                    [118] => 87
+                                    [119] => 88
+                                    [120] => 89
+                                    [121] => 90
+                                    [122] => 91
+                                    [123] => 92
+                                    [124] => 93
+                                    [125] => 94
+                                    [126] => 95
+                                    [161] => 96
+                                    [162] => 97
+                                    [163] => 98
+                                    [8260] => 99
+                                    [165] => 100
+                                    [402] => 101
+                                    [167] => 102
+                                    [164] => 103
+                                    [39] => 104
+                                    [8220] => 105
+                                    [171] => 106
+                                    [8249] => 107
+                                    [8250] => 108
+                                    [64257] => 109
+                                    [64258] => 110
+                                    [8211] => 111
+                                    [8224] => 112
+                                    [8225] => 113
+                                    [183] => 114
+                                    [182] => 115
+                                    [8226] => 116
+                                    [8218] => 117
+                                    [8222] => 118
+                                    [8221] => 119
+                                    [187] => 120
+                                    [8230] => 121
+                                    [8240] => 122
+                                    [191] => 123
+                                    [96] => 124
+                                    [180] => 125
+                                    [710] => 126
+                                    [732] => 127
+                                    [175] => 128
+                                    [728] => 129
+                                    [729] => 130
+                                    [168] => 131
+                                    [730] => 132
+                                    [184] => 133
+                                    [733] => 134
+                                    [731] => 135
+                                    [711] => 136
+                                    [8212] => 137
+                                    [198] => 138
+                                    [170] => 139
+                                    [321] => 140
+                                    [216] => 141
+                                    [338] => 142
+                                    [186] => 143
+                                    [230] => 144
+                                    [305] => 145
+                                    [322] => 146
+                                    [248] => 147
+                                    [339] => 148
+                                    [223] => 149
+                                    [207] => 150
+                                    [233] => 151
+                                    [259] => 152
+                                    [369] => 153
+                                    [283] => 154
+                                    [376] => 155
+                                    [247] => 156
+                                    [221] => 157
+                                    [194] => 158
+                                    [225] => 159
+                                    [219] => 160
+                                    [253] => 161
+                                    [537] => 162
+                                    [234] => 163
+                                    [366] => 164
+                                    [220] => 165
+                                    [261] => 166
+                                    [218] => 167
+                                    [371] => 168
+                                    [203] => 169
+                                    [272] => 170
+                                    [63171] => 171
+                                    [169] => 172
+                                    [274] => 173
+                                    [269] => 174
+                                    [229] => 175
+                                    [325] => 176
+                                    [314] => 177
+                                    [224] => 178
+                                    [354] => 179
+                                    [262] => 180
+                                    [227] => 181
+                                    [278] => 182
+                                    [353] => 183
+                                    [351] => 184
+                                    [237] => 185
+                                    [9674] => 186
+                                    [344] => 187
+                                    [290] => 188
+                                    [251] => 189
+                                    [226] => 190
+                                    [256] => 191
+                                    [345] => 192
+                                    [231] => 193
+                                    [379] => 194
+                                    [222] => 195
+                                    [332] => 196
+                                    [340] => 197
+                                    [346] => 198
+                                    [271] => 199
+                                    [362] => 200
+                                    [367] => 201
+                                    [179] => 202
+                                    [210] => 203
+                                    [192] => 204
+                                    [258] => 205
+                                    [215] => 206
+                                    [250] => 207
+                                    [356] => 208
+                                    [8706] => 209
+                                    [255] => 210
+                                    [323] => 211
+                                    [238] => 212
+                                    [202] => 213
+                                    [228] => 214
+                                    [235] => 215
+                                    [263] => 216
+                                    [324] => 217
+                                    [363] => 218
+                                    [327] => 219
+                                    [205] => 220
+                                    [177] => 221
+                                    [166] => 222
+                                    [174] => 223
+                                    [286] => 224
+                                    [304] => 225
+                                    [8721] => 226
+                                    [200] => 227
+                                    [341] => 228
+                                    [333] => 229
+                                    [377] => 230
+                                    [381] => 231
+                                    [8805] => 232
+                                    [208] => 233
+                                    [199] => 234
+                                    [316] => 235
+                                    [357] => 236
+                                    [281] => 237
+                                    [370] => 238
+                                    [193] => 239
+                                    [196] => 240
+                                    [232] => 241
+                                    [378] => 242
+                                    [303] => 243
+                                    [211] => 244
+                                    [243] => 245
+                                    [257] => 246
+                                    [347] => 247
+                                    [239] => 248
+                                    [212] => 249
+                                    [217] => 250
+                                    [8710] => 251
+                                    [254] => 252
+                                    [178] => 253
+                                    [214] => 254
+                                    [181] => 255
+                                    [236] => 256
+                                    [337] => 257
+                                    [280] => 258
+                                    [273] => 259
+                                    [190] => 260
+                                    [350] => 261
+                                    [318] => 262
+                                    [310] => 263
+                                    [313] => 264
+                                    [8482] => 265
+                                    [279] => 266
+                                    [204] => 267
+                                    [298] => 268
+                                    [317] => 269
+                                    [189] => 270
+                                    [8804] => 271
+                                    [244] => 272
+                                    [241] => 273
+                                    [368] => 274
+                                    [201] => 275
+                                    [275] => 276
+                                    [287] => 277
+                                    [188] => 278
+                                    [352] => 279
+                                    [536] => 280
+                                    [336] => 281
+                                    [176] => 282
+                                    [242] => 283
+                                    [268] => 284
+                                    [249] => 285
+                                    [8730] => 286
+                                    [270] => 287
+                                    [343] => 288
+                                    [209] => 289
+                                    [245] => 290
+                                    [342] => 291
+                                    [315] => 292
+                                    [195] => 293
+                                    [260] => 294
+                                    [197] => 295
+                                    [213] => 296
+                                    [380] => 297
+                                    [282] => 298
+                                    [302] => 299
+                                    [311] => 300
+                                    [8722] => 301
+                                    [206] => 302
+                                    [328] => 303
+                                    [355] => 304
+                                    [172] => 305
+                                    [246] => 306
+                                    [252] => 307
+                                    [8800] => 308
+                                    [291] => 309
+                                    [240] => 310
+                                    [382] => 311
+                                    [326] => 312
+                                    [185] => 313
+                                    [299] => 314
+                                    [8364] => 315
+                                )
+
+                        )
+
+                    [_glyphWidths:protected] => Array
+                        (
+                            [0] => 500
+                            [1] => 278
+                            [2] => 278
+                            [3] => 355
+                            [4] => 556
+                            [5] => 556
+                            [6] => 889
+                            [7] => 667
+                            [8] => 222
+                            [9] => 333
+                            [10] => 333
+                            [11] => 389
+                            [12] => 584
+                            [13] => 278
+                            [14] => 333
+                            [15] => 278
+                            [16] => 278
+                            [17] => 556
+                            [18] => 556
+                            [19] => 556
+                            [20] => 556
+                            [21] => 556
+                            [22] => 556
+                            [23] => 556
+                            [24] => 556
+                            [25] => 556
+                            [26] => 556
+                            [27] => 278
+                            [28] => 278
+                            [29] => 584
+                            [30] => 584
+                            [31] => 584
+                            [32] => 556
+                            [33] => 1015
+                            [34] => 667
+                            [35] => 667
+                            [36] => 722
+                            [37] => 722
+                            [38] => 667
+                            [39] => 611
+                            [40] => 778
+                            [41] => 722
+                            [42] => 278
+                            [43] => 500
+                            [44] => 667
+                            [45] => 556
+                            [46] => 833
+                            [47] => 722
+                            [48] => 778
+                            [49] => 667
+                            [50] => 778
+                            [51] => 722
+                            [52] => 667
+                            [53] => 611
+                            [54] => 722
+                            [55] => 667
+                            [56] => 944
+                            [57] => 667
+                            [58] => 667
+                            [59] => 611
+                            [60] => 278
+                            [61] => 278
+                            [62] => 278
+                            [63] => 469
+                            [64] => 556
+                            [65] => 222
+                            [66] => 556
+                            [67] => 556
+                            [68] => 500
+                            [69] => 556
+                            [70] => 556
+                            [71] => 278
+                            [72] => 556
+                            [73] => 556
+                            [74] => 222
+                            [75] => 222
+                            [76] => 500
+                            [77] => 222
+                            [78] => 833
+                            [79] => 556
+                            [80] => 556
+                            [81] => 556
+                            [82] => 556
+                            [83] => 333
+                            [84] => 500
+                            [85] => 278
+                            [86] => 556
+                            [87] => 500
+                            [88] => 722
+                            [89] => 500
+                            [90] => 500
+                            [91] => 500
+                            [92] => 334
+                            [93] => 260
+                            [94] => 334
+                            [95] => 584
+                            [96] => 333
+                            [97] => 556
+                            [98] => 556
+                            [99] => 167
+                            [100] => 556
+                            [101] => 556
+                            [102] => 556
+                            [103] => 556
+                            [104] => 191
+                            [105] => 333
+                            [106] => 556
+                            [107] => 333
+                            [108] => 333
+                            [109] => 500
+                            [110] => 500
+                            [111] => 556
+                            [112] => 556
+                            [113] => 556
+                            [114] => 278
+                            [115] => 537
+                            [116] => 350
+                            [117] => 222
+                            [118] => 333
+                            [119] => 333
+                            [120] => 556
+                            [121] => 1000
+                            [122] => 1000
+                            [123] => 611
+                            [124] => 333
+                            [125] => 333
+                            [126] => 333
+                            [127] => 333
+                            [128] => 333
+                            [129] => 333
+                            [130] => 333
+                            [131] => 333
+                            [132] => 333
+                            [133] => 333
+                            [134] => 333
+                            [135] => 333
+                            [136] => 333
+                            [137] => 1000
+                            [138] => 1000
+                            [139] => 370
+                            [140] => 556
+                            [141] => 778
+                            [142] => 1000
+                            [143] => 365
+                            [144] => 889
+                            [145] => 278
+                            [146] => 222
+                            [147] => 611
+                            [148] => 944
+                            [149] => 611
+                            [150] => 278
+                            [151] => 556
+                            [152] => 556
+                            [153] => 556
+                            [154] => 556
+                            [155] => 667
+                            [156] => 584
+                            [157] => 667
+                            [158] => 667
+                            [159] => 556
+                            [160] => 722
+                            [161] => 500
+                            [162] => 500
+                            [163] => 556
+                            [164] => 722
+                            [165] => 722
+                            [166] => 556
+                            [167] => 722
+                            [168] => 556
+                            [169] => 667
+                            [170] => 722
+                            [171] => 250
+                            [172] => 737
+                            [173] => 667
+                            [174] => 500
+                            [175] => 556
+                            [176] => 722
+                            [177] => 222
+                            [178] => 556
+                            [179] => 611
+                            [180] => 722
+                            [181] => 556
+                            [182] => 667
+                            [183] => 500
+                            [184] => 500
+                            [185] => 278
+                            [186] => 471
+                            [187] => 722
+                            [188] => 778
+                            [189] => 556
+                            [190] => 556
+                            [191] => 667
+                            [192] => 333
+                            [193] => 500
+                            [194] => 611
+                            [195] => 667
+                            [196] => 778
+                            [197] => 722
+                            [198] => 667
+                            [199] => 643
+                            [200] => 722
+                            [201] => 556
+                            [202] => 333
+                            [203] => 778
+                            [204] => 667
+                            [205] => 667
+                            [206] => 584
+                            [207] => 556
+                            [208] => 611
+                            [209] => 476
+                            [210] => 500
+                            [211] => 722
+                            [212] => 278
+                            [213] => 667
+                            [214] => 556
+                            [215] => 556
+                            [216] => 500
+                            [217] => 556
+                            [218] => 556
+                            [219] => 722
+                            [220] => 278
+                            [221] => 584
+                            [222] => 260
+                            [223] => 737
+                            [224] => 778
+                            [225] => 278
+                            [226] => 600
+                            [227] => 667
+                            [228] => 333
+                            [229] => 556
+                            [230] => 611
+                            [231] => 611
+                            [232] => 549
+                            [233] => 722
+                            [234] => 722
+                            [235] => 222
+                            [236] => 317
+                            [237] => 556
+                            [238] => 722
+                            [239] => 667
+                            [240] => 667
+                            [241] => 556
+                            [242] => 500
+                            [243] => 222
+                            [244] => 778
+                            [245] => 556
+                            [246] => 556
+                            [247] => 500
+                            [248] => 278
+                            [249] => 778
+                            [250] => 722
+                            [251] => 612
+                            [252] => 556
+                            [253] => 333
+                            [254] => 778
+                            [255] => 556
+                            [256] => 278
+                            [257] => 556
+                            [258] => 667
+                            [259] => 556
+                            [260] => 834
+                            [261] => 667
+                            [262] => 299
+                            [263] => 667
+                            [264] => 556
+                            [265] => 1000
+                            [266] => 556
+                            [267] => 278
+                            [268] => 278
+                            [269] => 556
+                            [270] => 834
+                            [271] => 549
+                            [272] => 556
+                            [273] => 556
+                            [274] => 722
+                            [275] => 667
+                            [276] => 556
+                            [277] => 556
+                            [278] => 834
+                            [279] => 667
+                            [280] => 667
+                            [281] => 778
+                            [282] => 400
+                            [283] => 556
+                            [284] => 722
+                            [285] => 556
+                            [286] => 453
+                            [287] => 722
+                            [288] => 333
+                            [289] => 722
+                            [290] => 556
+                            [291] => 722
+                            [292] => 556
+                            [293] => 667
+                            [294] => 667
+                            [295] => 667
+                            [296] => 778
+                            [297] => 500
+                            [298] => 667
+                            [299] => 278
+                            [300] => 500
+                            [301] => 584
+                            [302] => 278
+                            [303] => 556
+                            [304] => 278
+                            [305] => 584
+                            [306] => 556
+                            [307] => 556
+                            [308] => 549
+                            [309] => 556
+                            [310] => 556
+                            [311] => 500
+                            [312] => 556
+                            [313] => 333
+                            [314] => 278
+                            [315] => 556
+                        )
+
+                    [_missingGlyphWidth:protected] => 0
+                    [_fontType:protected] => 1
+                    [_fontNames:protected] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [en] => Copyright (c) 1985, 1987, 1989, 1990, 1997 Adobe Systems Incorporated.  All Rights Reserved.Helvetica is a trademark of Linotype-Hell AG and/or its subsidiaries.
+                                )
+
+                            [1] => Array
+                                (
+                                    [en] => Helvetica
+                                )
+
+                            [2] => Array
+                                (
+                                    [en] => Medium
+                                )
+
+                            [3] => Array
+                                (
+                                    [en] => 43054
+                                )
+
+                            [4] => Array
+                                (
+                                    [en] => Helvetica Medium
+                                )
+
+                            [5] => Array
+                                (
+                                    [en] => 002.000
+                                )
+
+                            [6] => Array
+                                (
+                                    [en] => Helvetica
+                                )
+
+                        )
+
+                    [_isBold:protected] => 
+                    [_isItalic:protected] => 
+                    [_isMonospace:protected] => 
+                    [_underlinePosition:protected] => -100
+                    [_underlineThickness:protected] => 50
+                    [_strikePosition:protected] => 225
+                    [_strikeThickness:protected] => 50
+                    [_unitsPerEm:protected] => 1000
+                    [_ascent:protected] => 718
+                    [_descent:protected] => -207
+                    [_lineGap:protected] => 275
+                    [_objectFactory:protected] => Zend_Pdf_ElementFactory_Proxy Object
+                        (
+                            [_factory:Zend_Pdf_ElementFactory_Proxy:private] => Zend_Pdf_ElementFactory Object
+                                (
+                                    [_modifiedObjects:Zend_Pdf_ElementFactory:private] => Array
+                                        (
+                                            [1] => Zend_Pdf_Element_Object Object
+                                                (
+                                                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                        (
+                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                (
+                                                                    [Type] => Zend_Pdf_Element_Name Object
+                                                                        (
+                                                                            [value] => Font
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [Encoding] => Zend_Pdf_Element_Name Object
+                                                                        (
+                                                                            [value] => WinAnsiEncoding
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [Subtype] => Zend_Pdf_Element_Name Object
+                                                                        (
+                                                                            [value] => Type1
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [BaseFont] => Zend_Pdf_Element_Name Object
+                                                                        (
+                                                                            [value] => Helvetica
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                )
+
+                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                        )
+
+                                                    [_objNum:protected] => 1
+                                                    [_genNum:protected] => 0
+                                                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                )
+
+                                        )
+
+                                    [_removedObjects:Zend_Pdf_ElementFactory:private] => SplObjectStorage Object
+                                        (
+                                            [storage:SplObjectStorage:private] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [_registeredObjects:Zend_Pdf_ElementFactory:private] => Array
+                                        (
+                                            [1 0] => Zend_Pdf_Element_Object Object
+                                                (
+                                                    [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                                        (
+                                                            [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                                                (
+                                                                    [Type] => Zend_Pdf_Element_Name Object
+                                                                        (
+                                                                            [value] => Font
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [Encoding] => Zend_Pdf_Element_Name Object
+                                                                        (
+                                                                            [value] => WinAnsiEncoding
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [Subtype] => Zend_Pdf_Element_Name Object
+                                                                        (
+                                                                            [value] => Type1
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                    [BaseFont] => Zend_Pdf_Element_Name Object
+                                                                        (
+                                                                            [value] => Helvetica
+                                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                                        )
+
+                                                                )
+
+                                                            [_parentObject:Zend_Pdf_Element:private] => 
+                                                        )
+
+                                                    [_objNum:protected] => 1
+                                                    [_genNum:protected] => 0
+                                                    [_factory:protected] => Zend_Pdf_ElementFactory Object
+ *RECURSION*
+                                                    [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                                )
+
+                                        )
+
+                                    [_objectCount:Zend_Pdf_ElementFactory:private] => 2
+                                    [_attachedFactories:Zend_Pdf_ElementFactory:private] => Array
+                                        (
+                                        )
+
+                                    [_factoryId:Zend_Pdf_ElementFactory:private] => 1
+                                    [_shiftCalculationCache:Zend_Pdf_ElementFactory:private] => Array
+                                        (
+                                        )
+
+                                )
+
+                        )
+
+                    [_resource:protected] => Zend_Pdf_Element_Object Object
+                        (
+                            [_value:protected] => Zend_Pdf_Element_Dictionary Object
+                                (
+                                    [_items:Zend_Pdf_Element_Dictionary:private] => Array
+                                        (
+                                            [Type] => Zend_Pdf_Element_Name Object
+                                                (
+                                                    [value] => Font
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [Encoding] => Zend_Pdf_Element_Name Object
+                                                (
+                                                    [value] => WinAnsiEncoding
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [Subtype] => Zend_Pdf_Element_Name Object
+                                                (
+                                                    [value] => Type1
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                            [BaseFont] => Zend_Pdf_Element_Name Object
+                                                (
+                                                    [value] => Helvetica
+                                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                                )
+
+                                        )
+
+                                    [_parentObject:Zend_Pdf_Element:private] => 
+                                )
+
+                            [_objNum:protected] => 1
+                            [_genNum:protected] => 0
+                            [_factory:protected] => Zend_Pdf_ElementFactory Object
+                                (
+                                    [_modifiedObjects:Zend_Pdf_ElementFactory:private] => Array
+                                        (
+                                            [1] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                        )
+
+                                    [_removedObjects:Zend_Pdf_ElementFactory:private] => SplObjectStorage Object
+                                        (
+                                            [storage:SplObjectStorage:private] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [_registeredObjects:Zend_Pdf_ElementFactory:private] => Array
+                                        (
+                                            [1 0] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                                        )
+
+                                    [_objectCount:Zend_Pdf_ElementFactory:private] => 2
+                                    [_attachedFactories:Zend_Pdf_ElementFactory:private] => Array
+                                        (
+                                        )
+
+                                    [_factoryId:Zend_Pdf_ElementFactory:private] => 1
+                                    [_shiftCalculationCache:Zend_Pdf_ElementFactory:private] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [_parentObject:Zend_Pdf_Element:private] => Zend_Pdf_Element_Object Object
+ *RECURSION*
+                        )
+
+                    [_isMonospaced] => 
+                )
+
+            [_fontSize:protected] => 11
+            [_style:protected] => 
+            [_saveCount:protected] => 0
+        )
+
+)
+)";i:1;s:1257:"#0 F:\xampp\htdocs\shopbing\app\code\local\Mycustom\Adminhtml\Model\Order\Pdf\Barcode.php(27): Varien_Object->__call('insertSignText', Array)
+#1 F:\xampp\htdocs\shopbing\app\code\local\Mycustom\Adminhtml\Model\Order\Pdf\Barcode.php(27): Mycustom_Adminhtml_Model_Order_Pdf_Barcode->insertSignText(Object(Zend_Pdf_Page))
+#2 F:\xampp\htdocs\shopbing\app\code\local\Mycustom\Adminhtml\controllers\Adminhtml\Sales\OrderController.php(27): Mycustom_Adminhtml_Model_Order_Pdf_Barcode->getPdf(Array)
+#3 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Mycustom_Adminhtml_Adminhtml_Sales_OrderController->pdfbarcodeAction()
+#4 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('pdfbarcode')
+#5 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#6 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#7 F:\xampp\htdocs\shopbing\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#8 F:\xampp\htdocs\shopbing\index.php(83): Mage::run('', 'store')
+#9 {main}";s:3:"url";s:86:"/shopbing/index.php/admin/sales_order/pdfbarcode/key/234d5db4757737e46ef2e643404eb493/";s:11:"script_name";s:19:"/shopbing/index.php";s:4:"skin";s:5:"admin";}

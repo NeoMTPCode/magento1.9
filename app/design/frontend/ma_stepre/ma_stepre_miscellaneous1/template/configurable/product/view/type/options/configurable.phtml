@@ -1,0 +1,140 @@
+<?php
+$_product = $this->getProduct();
+$_attributes = Mage::helper('core')->decorateArray($this->getAllowAttributes());
+$configs = $this->getRegularConfig();
+
+$_defaultProduct = Mage::getModel('catalog/product')->load((int)$_product['default_configuration_id']);
+//foreach ($_attributes as $_attribute){
+//    $_attribute->getProductAttribute()->getAttributeCode();;
+//}
+$attribute_code_options = array();
+?>
+<?php if ($_product->isSaleable() && count($_attributes)): ?>
+    <div class="options-choice">
+        <dl>
+            <?php foreach ($configs['attributes'] as $config): ?>
+
+                <dt><label class="required name-attribute"><em>*</em><?php echo $config['label'] ?></label></dt>
+
+                <div class="input-box row">
+                    <ul class="attribute-option">
+                        <?php
+                        $attribute_code_options[] = $config['code'];
+                        foreach ($config['options'] as $value):
+                            ?>
+                            <li style="float: left;"
+                                class="<?php if ($_defaultProduct->getData($config['code']) == $value['id']) echo 'active'; ?>">
+                                <!--                        <label class="label-radio-configurable"-->
+                                <!--                               id="-->
+                                <?php //echo (float)$value['price'] + (float)$_product->getPrice();
+                                ?><!--">-->
+                                <a href="javascript:void(0)" name="super_attribute[<?php echo $value['id'] ?>]"
+                                   id="<?php echo $value['id'] ?>"
+                                   class="validate-custom-configurable"
+                                   title="Click để chọn <?php echo $value['label'] ?>">
+                                    <?php echo $value['label'] ?>
+                                    <!--                                (+ $--><?php //printf("%.2f", $value['price'])
+                                    ?><!--)-->
+                                </a>
+                                <!--                        </label>-->
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                </div>
+
+            <?php endforeach; ?>
+        </dl>
+    </div>
+<?php endif; ?>
+<div id="testRe"></div>
+<script type="text/javascript">
+    var spConfig = new Product.Config(<?php echo $this->getJsonConfig() ?>);
+//    document.observe("dom:loaded", function () {
+//        var customValidation = false;
+//        var priceFormat = <?php //echo $this->helper('tax')->getPriceFormat(); ?>//;
+//        $$('.validate-custom-configurable').each(function (el) {
+//            el.observe('click', function (event) {
+//                //console.log(el.parentNode);
+//                $$('span .price').each(function (elmn) {
+//                    elmn.update(formatCurrency(parseFloat(el.parentNode.id), priceFormat)).innerHTML;
+//                });
+//            });
+//        });
+//        Validation.addAllThese([
+//            ['validate-custom-configurable', 'This is a required field.', function (v) {
+//                $$('.validate-custom-configurable').each(function (el) {
+//                    if (el.checked) {
+//                        customValidation = true;
+//                    }
+//                });
+//                return customValidation;
+//            }]
+//        ]);
+//    });
+</script>
+<?php
+
+if ($_product['default_configuration_id'] != null) {
+    $gallery_images = Mage::getModel('catalog/product')->load((int)$_product['default_configuration_id'])->getMediaGalleryImages();
+}
+?>
+<script>
+    var configsAttr = <?php echo json_encode($configs['attributes']); ?>;
+    jQuery('ul.attribute-option li').click(function () {
+        var index = 0,
+            productId = [];
+        jQuery(this).addClass('active').siblings().removeClass('active');
+        jQuery("ul.attribute-option").each(function () {
+            var optionChoice = jQuery(this).find('li.active a').attr('id'),
+                optionIndex = configsAttr[Object.keys(configsAttr)[index]].options;
+            for (var i = 0; i < optionIndex.length; ++i) {
+                if (optionIndex[i].id == optionChoice) {
+                    productId = productId.concat(optionIndex[i].products);
+                    break;
+                }
+            }
+            index++;
+        });
+
+        jQuery.ajax({
+            url: '<?php echo $this->getUrl('configurable/index/updateOption') ?>',
+            method: 'post',
+            data: {productId: MaxCountValue(productId)},
+            dataType: 'json'
+        }).done(function (data) {
+//            console.log(data);
+            jQuery('.product-name').text(data.name);
+            jQuery('.price-box').empty();
+            jQuery('.price-box').html(data.priceHtml);
+            jQuery('.short-description').html(data.name);
+            jQuery('#product_tabs_description_contents').html(data.description);
+            jQuery('.ma-more-img ul').empty();
+            jQuery('.ma-more-img ul').html(data.galleryImgHtml);
+            jQuery('p.product-image').empty();
+            jQuery('p.product-image').html(data.imgZoomHtml);
+            jQuery('.cloud-zoom, .cloud-zoom-gallery').CloudZoom();
+        });
+    });
+
+
+    function MaxCountValue(arrValue) {
+        var max = 0, id = 0;
+        for (var j = 0; j < arrValue.length; ++j) {
+            if (max < CountX(arrValue[j], arrValue)) {
+                max = CountX(arrValue[j], arrValue);
+                id = j;
+            }
+        }
+        return arrValue[id];
+    }
+
+    function CountX(value, arrValue) {
+        var dem = 0;
+        for (var j = 0; j < arrValue.length; ++j) {
+            if (value == arrValue[j]) {
+                dem++;
+            }
+        }
+        return dem;
+    }
+</script>

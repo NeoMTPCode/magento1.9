@@ -1,0 +1,271 @@
+h2.product-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events:all;
+}
+.modal{
+    overflow-y:hidden;
+}
+
+body.modal-open { overflow:inherit; padding-right:inherit !important; }
+
+
+#divLoading{
+    background: green;
+}
+
+
+#divLoading.show{
+    display : block;
+    position : fixed;
+    z-index: 99999999999999;
+    background-image : url('../images/loader_1.gif');
+    background-color: rgba(172, 172, 172, 0.33);
+    opacity : 0.4;
+    background-repeat : no-repeat;
+    background-position : center;
+    left : 0;
+    bottom : 0;
+    right : 0;
+    top : 0;
+}
+
+#loadinggif.show
+{
+    left : 50%;
+    top : 50%;
+    position : absolute;
+    z-index : 101;
+    width : 32px;
+    height : 32px;
+    margin-left : -16px;
+    margin-top : -16px;
+}
+
+ul.attribute-option li{
+    border: 1px solid #3f8aff;
+    border-radius: 10px;
+    padding: 10px;
+    background-image: none;
+    margin: 10px;
+}
+
+ul.attribute-option li a{
+    color: #3f8aff;
+    text-decoration: none;
+}
+ul.attribute-option li.active{
+    background-color: #3f8aff;
+}
+
+ul.attribute-option li.active a{
+    color: white;
+}
+
+#faq .common-question a {
+    width: 140px;
+    height: 265px;
+    display: block;
+    text-align: center;
+    margin: 0 7px 12px;
+    float: left;
+    background: #f7f7f7;
+}
+
+#faq .common-question .question-title {
+    text-transform: uppercase;
+    color: #666666;
+    font-size: 12px;
+    display: block;
+    padding: 0 10px;
+}
+
+#faq .common-question a .faq-icon {
+    display: block;
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+#faq .common-question a .fa-5x{
+    font-size: 7em;
+    margin-top: 20px;
+}
+
+#faq .left-col ul li a{
+    font-size: 15px;
+    margin-top: 20px;
+    line-height: 13px;
+    display: block;
+}
+
+#faq .contact-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 70%;
+}
+
+
+/*CHECK ORDER STATUS*/
+.bs-wizard-dot {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    display: block;
+    top: 55px;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -15px;
+    border-radius: 50%;
+    color: #000;
+    /*border: 2px solid #35c4f6;*/
+    font-size: 14px;
+    text-align: center;
+    line-height: 23px;
+    background: #b9b9b9;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.tracking-order-process .bs-wizard {
+    margin-top: 60px;
+}
+
+.bs-wizard .bs-wizard-step .progress {
+    height: 3px;
+    margin: 22px 0;
+    background: #b9b9b9;
+    position: relative;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.progress-bar {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #337ab7;
+    -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    -webkit-transition: width .6s ease;
+    -o-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.bs-wizard .bs-wizard-step {
+    padding: 0;
+    position: relative;
+}
+
+.bs-wizard .bs-wizard-step .bs-wizard-stepnum {
+    font-size: 11px;
+    height: 27px;
+}
+
+.tracking-order-process {
+    -moz-border-radius: 3px;
+    text-align: center;
+}
+
+.tracking-order-process p {
+    margin: 0 !important;
+}
+
+.tracking-order-process .bs-wizard .bs-wizard-step:first-child .progress {
+    left: 50%;
+    width: 50%;
+}
+
+.tracking-order-process .bs-wizard .bs-wizard-step:last-child .progress {
+    width: 50%;
+}
+
+.tracking-order-detail .bottom {
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+
+.tracking-order-detail .bottom table {
+    width: auto;
+    margin: 0 auto;
+    font-size: 13px;
+    max-width: 90%;
+    border: 1px solid #ddd;
+}
+
+.enable-checkorder-wizard{
+    background: #3f8aff !important;
+}
+
+.seller-container {
+    width: 100%;
+    position: relative;
+    padding-right: 5px;
+    padding-left: 15px;
+    height: 100%;
+}
+.seller-container span.fa{
+    float:left;
+    width: 70px;
+    background-position: 12px center;
+}
+.current-seller .title {
+    font-size: 12px;
+    line-height: 17px;
+    color: #4a4a4a;
+    font-weight: 700;
+    display: table;
+    width: 100%;
+    margin-bottom: 0;
+}
+.current-seller .title .text {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    line-height: 20px;
+    color: #999;
+    font-weight: 400;
+    font-size: 12px;
+}
+ul.seller-feature .content {
+    vertical-align: top;
+    display: table-cell;
+    line-height: 20px;
+    font-size: 11px;
+    width: 212px;
+}
+ul.seller-feature li {
+    font-size: 12px;
+    color: #444;
+    margin: 13px 0;
+    width: 100%;
+    display: flex;
+}

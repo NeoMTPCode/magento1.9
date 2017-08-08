@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <productlogupdate>
+                                        <title>Product Log Update</title>
+                                    </productlogupdate>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                    <mage translate="title" module="productlogupdate">
+                        <title>Mage</title>
+                        <sort_order>71</sort_order>
+                        <children>
+                            <productlogupdate translate="title" module="banner7">
+                                <title>Product Log Update</title>
+                                <sort_order>0</sort_order>
+                                <children>
+                                    <items translate="title" module="banner7">
+                                        <title>Manage Items</title>
+                                        <sort_order>0</sort_order>
+                                    </items>
+                                </children>
+                            </productlogupdate>
+                        </children>
+                    </mage>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

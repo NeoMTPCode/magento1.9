@@ -1,0 +1,9 @@
+a:5:{i:0;s:214:"Error in file: "F:\xampp\htdocs\shopbing\app\code\local\Display\Customgrid\sql\customgrid_setup\mysql4-install-0.1.0.php" - SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'helpcenter' already exists";i:1;s:948:"#0 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Model\Resource\Setup.php(644): Mage::exception('Mage_Core', 'Error in file: ...')
+#1 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Model\Resource\Setup.php(421): Mage_Core_Model_Resource_Setup->_modifyResourceDb('install', '', '0.1.0')
+#2 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Model\Resource\Setup.php(327): Mage_Core_Model_Resource_Setup->_installResourceDb('0.1.0')
+#3 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Model\Resource\Setup.php(235): Mage_Core_Model_Resource_Setup->applyUpdates()
+#4 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Model\App.php(428): Mage_Core_Model_Resource_Setup::applyAllUpdates()
+#5 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Model\App.php(354): Mage_Core_Model_App->_initModules()
+#6 F:\xampp\htdocs\shopbing\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#7 F:\xampp\htdocs\shopbing\index.php(83): Mage::run('', 'store')
+#8 {main}";s:3:"url";s:75:"/shopbing/index.php/admin/cache/index/key/89fb8ac63f9954e1a922bcf85e6883b9/";s:11:"script_name";s:19:"/shopbing/index.php";s:4:"skin";s:7:"default";}

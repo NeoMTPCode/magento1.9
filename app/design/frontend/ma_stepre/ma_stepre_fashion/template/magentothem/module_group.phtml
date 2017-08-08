@@ -1,0 +1,22 @@
+<div class="module-group">
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+			<?php  echo $this->getLayout()->createBlock('bestsellerproductslider/bestsellerproductslider')->setTemplate('magentothem/bestsellerproductslider/bestsellerproductslider.phtml')->toHtml(); ?>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+			<?php  echo $this->getLayout()->createBlock('onsaleslider/onsaleslider')->setTemplate('magentothem/onsaleslider/onsaleslider.phtml')->toHtml(); ?>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+			<?php  echo $this->getLayout()->createBlock('core/template')->setTemplate('magentothem/lastesttweet/lastesttweet.phtml')->toHtml(); ?>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+			<?php  echo $this->getLayout()->createBlock('newsletter/subscribe')->setTemplate('newsletter/subscribe.phtml')->toHtml(); ?>
+			<?php
+				$block = Mage::getModel('cms/block')->setStoreId(Mage::app()->getStore()->getId())->load('static_instagram');
+				echo Mage::getSingleton('widget/template_filter')->filter($block->getContent());
+			?>
+		</div>
+	</div>
+	</div>
+</div>

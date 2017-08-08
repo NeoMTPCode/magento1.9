@@ -1,0 +1,31 @@
+.baokim-config-heading strong{
+	padding-left: 80px;
+	background: url(../images/baokim/logo-baokim.png) no-repeat 0 0px;
+}
+.baokim-config-heading strong {
+	font-size: 12px;
+	display: inline-block;
+}
+
+/*===============payment_baokim_pro==============*/
+#payment_paymentpro .baokim-config-heading .heading{
+	float: left;
+}
+.bk-allinone {
+	padding: 8px 0 0 280px;
+	background: url(../images/baokim/bk-allinone.png) no-repeat 0 0;
+	height: 26px;
+}
+.bk-allinone {
+	float: right;
+	text-align: right;
+}
+#payment_paymentpro h4{
+	color: #ea7601;
+}
+
+/*===============payment_baokim==============*/
+
+#payment_baokim h4{
+	color: #ea7601;
+}

@@ -1,0 +1,518 @@
+<div class="ma-nav-mobile-container visible-xs">
+	
+		<div class="navbar">
+			<div id="navbar-inner" class="navbar-inner navbar-inactive">
+                                <div class="menu-mobile">
+                                    <a class="btn btn-navbar navbar-toggle">
+                                            <span class="icon-bar">&nbsp;</span>
+                                            <span class="icon-bar">&nbsp;</span>
+                                            <span class="icon-bar">&nbsp;</span>
+                                    </a>
+                                    <span class="brand navbar-brand">Danh mục</span>
+                                </div>
+				<ul id="ma-mobilemenu" class="mobilemenu nav-collapse collapse">
+					<li class="level0 nav-1 level-top first parent">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang.html" class="level-top">
+<span>ĐIỆN THOẠI VÀ MÁY TÍNH BẢNG</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-1-1 first parent">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/smartphone.html">
+<span>Smartphone</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-1-1 first">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/smartphone/samsung.html">
+<span>Samsung</span>
+</a>
+</li><li class="level2 nav-1-1-2">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/smartphone/apple.html">
+<span>Apple</span>
+</a>
+</li><li class="level2 nav-1-1-3">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/smartphone/xiaomi.html">
+<span>Xiaomi</span>
+</a>
+</li><li class="level2 nav-1-1-4">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/smartphone/mobiistar.html">
+<span>Mobiistar</span>
+</a>
+</li><li class="level2 nav-1-1-5">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/smartphone/oppo.html">
+<span>OPPO</span>
+</a>
+</li><li class="level2 nav-1-1-6">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/smartphone/lenovo.html">
+<span>Lenovo</span>
+</a>
+</li><li class="level2 nav-1-1-7">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/smartphone/htc.html">
+<span>HTC</span>
+</a>
+</li><li class="level2 nav-1-1-8">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/smartphone/asus.html">
+<span>Asus</span>
+</a>
+</li><li class="level2 nav-1-1-9">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/smartphone/sony.html">
+<span>Sony</span>
+</a>
+</li><li class="level2 nav-1-1-10 last">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/smartphone/lg.html">
+<span>LG</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-1-2">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/may-tinh-bang.html">
+<span>Máy tính bảng</span>
+</a>
+</li><li class="level1 nav-1-3 last parent">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/phu-kien.html">
+<span>Phụ kiện</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-1-3-11 first">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/phu-kien/phone-cases.html">
+<span>Phone Cases</span>
+</a>
+</li><li class="level2 nav-1-3-12">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/phu-kien/screen-protectors.html">
+<span>Screen Protectors</span>
+</a>
+</li><li class="level2 nav-1-3-13">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/phu-kien/car-accessories.html">
+<span>Car Accessories</span>
+</a>
+</li><li class="level2 nav-1-3-14">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/phu-kien/fashion-accessories.html">
+<span>Fashion Accessories</span>
+</a>
+</li><li class="level2 nav-1-3-15">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/phu-kien/cables-docks.html">
+<span>Cables &amp; Docks</span>
+</a>
+</li><li class="level2 nav-1-3-16">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/phu-kien/parts-tools.html">
+<span>Parts &amp; Tools</span>
+</a>
+</li><li class="level2 nav-1-3-17">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/phu-kien/prepaid-cards.html">
+<span>Prepaid cards</span>
+</a>
+</li><li class="level2 nav-1-3-18">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/phu-kien/batteries-chargers.html">
+<span>Batteries &amp; Chargers</span>
+</a>
+</li><li class="level2 nav-1-3-19">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/phu-kien/tablet-accessories.html">
+<span>Tablet Accessories</span>
+</a>
+</li><li class="level2 nav-1-3-20">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/phu-kien/power-banks.html">
+<span>Power Banks</span>
+</a>
+</li><li class="level2 nav-1-3-21 last">
+<a href="http://127.0.0.1/shopbing/dien-thoai-may-tinh-bang/phu-kien/camera-storage.html">
+<span>Camera &amp; Storage</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level0 nav-2 level-top parent">
+<a href="http://127.0.0.1/shopbing/computers-laptops.html" class="level-top">
+<span>MÁY TÍNH &amp; LAPTOP</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-2-1 first parent">
+<a href="http://127.0.0.1/shopbing/computers-laptops/desktop-computers.html">
+<span>Máy tính để bàn</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-2-1-1 first">
+<a href="http://127.0.0.1/shopbing/computers-laptops/desktop-computers/gaming.html">
+<span>Máy tính chơi game</span>
+</a>
+</li><li class="level2 nav-2-1-2">
+<a href="http://127.0.0.1/shopbing/computers-laptops/desktop-computers/all-in-one.html">
+<span>Máy tính all in one</span>
+</a>
+</li><li class="level2 nav-2-1-3 last">
+<a href="http://127.0.0.1/shopbing/computers-laptops/desktop-computers/all-purpose.html">
+<span>Máy tính để bàn nguyên bộ</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-2-2 parent">
+<a href="http://127.0.0.1/shopbing/computers-laptops/laptops.html">
+<span>Laptops</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-2-2-4 first">
+<a href="http://127.0.0.1/shopbing/computers-laptops/laptops/macbooks.html">
+<span>Macbooks</span>
+</a>
+</li><li class="level2 nav-2-2-5">
+<a href="http://127.0.0.1/shopbing/computers-laptops/laptops/traditional.html">
+<span>Truyền thống</span>
+</a>
+</li><li class="level2 nav-2-2-6">
+<a href="http://127.0.0.1/shopbing/computers-laptops/laptops/gaming.html">
+<span>Laptop giải trí</span>
+</a>
+</li><li class="level2 nav-2-2-7">
+<a href="http://127.0.0.1/shopbing/computers-laptops/laptops/2-in-1s.html">
+<span>2-in-1s</span>
+</a>
+</li><li class="level2 nav-2-2-8 last">
+<a href="http://127.0.0.1/shopbing/computers-laptops/laptops/touchscreen.html">
+<span>Laptop màn hình cảm ứng</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-2-3 last parent">
+<a href="http://127.0.0.1/shopbing/computers-laptops/computers-accessories.html">
+<span>Phụ kiện máy tính</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-2-3-9 first">
+<a href="http://127.0.0.1/shopbing/computers-laptops/computers-accessories/storage.html">
+<span>Thiết bị lưu trữ</span>
+</a>
+</li><li class="level2 nav-2-3-10">
+<a href="http://127.0.0.1/shopbing/computers-laptops/computers-accessories/mice.html">
+<span>Chuột</span>
+</a>
+</li><li class="level2 nav-2-3-11">
+<a href="http://127.0.0.1/shopbing/computers-laptops/computers-accessories/keyboards.html">
+<span>Bàn phím</span>
+</a>
+</li><li class="level2 nav-2-3-12">
+<a href="http://127.0.0.1/shopbing/computers-laptops/computers-accessories/monitors.html">
+<span>Màn hình</span>
+</a>
+</li><li class="level2 nav-2-3-13">
+<a href="http://127.0.0.1/shopbing/computers-laptops/computers-accessories/gaming-headphones.html">
+<span>Tai nghe chơi game</span>
+</a>
+</li><li class="level2 nav-2-3-14">
+<a href="http://127.0.0.1/shopbing/computers-laptops/computers-accessories/printers.html">
+<span>Máy in</span>
+</a>
+</li><li class="level2 nav-2-3-15">
+<a href="http://127.0.0.1/shopbing/computers-laptops/computers-accessories/computer-components.html">
+<span>Linh kiện máy tính</span>
+</a>
+</li><li class="level2 nav-2-3-16">
+<a href="http://127.0.0.1/shopbing/computers-laptops/computers-accessories/network-components.html">
+<span>Thiết bị mạng</span>
+</a>
+</li><li class="level2 nav-2-3-17 last">
+<a href="http://127.0.0.1/shopbing/computers-laptops/computers-accessories/laptop-stands.html">
+<span>Bàn laptop</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level0 nav-3 level-top parent">
+<a href="http://127.0.0.1/shopbing/cameras.html" class="level-top">
+<span>MÁY ẢNH VÀ LINH KIỆN</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-3-1 first parent">
+<a href="http://127.0.0.1/shopbing/cameras/camera-accessories.html">
+<span>Linh Kiện</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-3-1-1 first">
+<a href="http://127.0.0.1/shopbing/cameras/camera-accessories/lens.html">
+<span>Ống kính</span>
+</a>
+</li><li class="level2 nav-3-1-2">
+<a href="http://127.0.0.1/shopbing/cameras/camera-accessories/memory-cards.html">
+<span>Thẻ nhớ</span>
+</a>
+</li><li class="level2 nav-3-1-3">
+<a href="http://127.0.0.1/shopbing/cameras/camera-accessories/monopods-and-tripods.html">
+<span>Chân máy ảnh &amp; Gậy tự sướng</span>
+</a>
+</li><li class="level2 nav-3-1-4">
+<a href="http://127.0.0.1/shopbing/cameras/camera-accessories/camera-bags-cases.html">
+<span>Túi đựng máy ảnh</span>
+</a>
+</li><li class="level2 nav-3-1-5 last">
+<a href="http://127.0.0.1/shopbing/cameras/camera-accessories/optics.html">
+<span>Ống nhòm</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-3-2 last parent">
+<a href="http://127.0.0.1/shopbing/cameras/cameras.html">
+<span>Máy ảnh</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-3-2-6 first">
+<a href="http://127.0.0.1/shopbing/cameras/cameras/sports-action-cameras.html">
+<span>Sports &amp; Action Cameras</span>
+</a>
+</li><li class="level2 nav-3-2-7">
+<a href="http://127.0.0.1/shopbing/cameras/cameras/point-shoot-cameras.html">
+<span>Point &amp; Shoot Cameras</span>
+</a>
+</li><li class="level2 nav-3-2-8">
+<a href="http://127.0.0.1/shopbing/cameras/cameras/dslrs.html">
+<span>DSLRs</span>
+</a>
+</li><li class="level2 nav-3-2-9">
+<a href="http://127.0.0.1/shopbing/cameras/cameras/mirrorless-cameras.html">
+<span>Mirrorless Cameras</span>
+</a>
+</li><li class="level2 nav-3-2-10">
+<a href="http://127.0.0.1/shopbing/cameras/cameras/bridge-cameras.html">
+<span>Bridge Cameras</span>
+</a>
+</li><li class="level2 nav-3-2-11">
+<a href="http://127.0.0.1/shopbing/cameras/cameras/security-gadget-cameras.html">
+<span>Security &amp; Gadget Cameras</span>
+</a>
+</li><li class="level2 nav-3-2-12">
+<a href="http://127.0.0.1/shopbing/cameras/cameras/instant-cameras.html">
+<span>Instant Cameras</span>
+</a>
+</li><li class="level2 nav-3-2-13 last">
+<a href="http://127.0.0.1/shopbing/cameras/cameras/car-cameras.html">
+<span>Car Cameras</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level0 nav-4 level-top parent">
+<a href="http://127.0.0.1/shopbing/audio.html" class="level-top">
+<span>Âm thanh</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-4-1 first parent">
+<a href="http://127.0.0.1/shopbing/audio/headphones-headsets.html">
+<span>Các loại tai nghe</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-4-1-1 first">
+<a href="http://127.0.0.1/shopbing/audio/headphones-headsets/over-the-ear-headphones.html">
+<span>Over-the-Ear Headphones </span>
+</a>
+</li><li class="level2 nav-4-1-2">
+<a href="http://127.0.0.1/shopbing/audio/headphones-headsets/on-ear-headphones.html">
+<span>On-ear Headphones</span>
+</a>
+</li><li class="level2 nav-4-1-3">
+<a href="http://127.0.0.1/shopbing/audio/headphones-headsets/in-ear-headphones.html">
+<span>In-Ear Headphones</span>
+</a>
+</li><li class="level2 nav-4-1-4">
+<a href="http://127.0.0.1/shopbing/audio/headphones-headsets/mono-headsets.html">
+<span>Mono Headsets</span>
+</a>
+</li><li class="level2 nav-4-1-5 last">
+<a href="http://127.0.0.1/shopbing/audio/headphones-headsets/wireless-earbuds.html">
+<span>Wireless Earbuds</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-4-2">
+<a href="http://127.0.0.1/shopbing/audio/portable-speakers.html">
+<span>Loa di động</span>
+</a>
+</li><li class="level1 nav-4-3 parent">
+<a href="http://127.0.0.1/shopbing/audio/home-audio-theater.html">
+<span>Hệ thống giải trí tại gia</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-4-3-6 first">
+<a href="http://127.0.0.1/shopbing/audio/home-audio-theater/component-speakers.html">
+<span>Loa</span>
+</a>
+</li><li class="level2 nav-4-3-7">
+<a href="http://127.0.0.1/shopbing/audio/home-audio-theater/karaoke-systems.html">
+<span>Dàn Karaoke</span>
+</a>
+</li><li class="level2 nav-4-3-8 last">
+<a href="http://127.0.0.1/shopbing/audio/home-audio-theater/hi-fi-systems.html">
+<span>Dàn Hi-Fi</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-4-4 last parent">
+<a href="http://127.0.0.1/shopbing/audio/audio-players.html">
+<span>Máy nghe nhạc</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-4-4-9 first">
+<a href="http://127.0.0.1/shopbing/audio/audio-players/mp3-mp4.html">
+<span>Máy MP3/MP4 </span>
+</a>
+</li><li class="level2 nav-4-4-10">
+<a href="http://127.0.0.1/shopbing/audio/audio-players/radio-cd-players.html">
+<span>Radio &amp; Máy nghe CD </span>
+</a>
+</li><li class="level2 nav-4-4-11">
+<a href="http://127.0.0.1/shopbing/audio/audio-players/voice-recorders.html">
+<span>Máy ghi âm</span>
+</a>
+</li><li class="level2 nav-4-4-12 last">
+<a href="http://127.0.0.1/shopbing/audio/audio-players/portable-audio-accessories.html">
+<span>Phụ kiện thiết bị âm thanh di động</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level0 nav-5 level-top parent">
+<a href="http://127.0.0.1/shopbing/tv-audio-video.html" class="level-top">
+<span>TV, Video</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-5-1 first parent">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/televisions.html">
+<span>Tivi</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-5-1-1 first">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/televisions/32-inches-below.html">
+<span>Dưới 33 Inches</span>
+</a>
+</li><li class="level2 nav-5-1-2">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/televisions/33-43-inches.html">
+<span>33 - 43 Inches</span>
+</a>
+</li><li class="level2 nav-5-1-3">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/televisions/44-49-inches.html">
+<span>44 - 49 Inches</span>
+</a>
+</li><li class="level2 nav-5-1-4">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/televisions/50-59-inches.html">
+<span>50-59 Inches</span>
+</a>
+</li><li class="level2 nav-5-1-5">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/televisions/60-69-inches.html">
+<span>60 - 69 Inches</span>
+</a>
+</li><li class="level2 nav-5-1-6">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/televisions/70-inches-above.html">
+<span>Từ 70 Inches</span>
+</a>
+</li><li class="level2 nav-5-1-7">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/televisions/tv-accessories.html">
+<span>Phụ kiện tivi</span>
+</a>
+</li><li class="level2 nav-5-1-8">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/televisions/tivi-led.html">
+<span>Tivi LED</span>
+</a>
+</li><li class="level2 nav-5-1-9">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/televisions/smart-tivi.html">
+<span>Smart Tivi</span>
+</a>
+</li><li class="level2 nav-5-1-10 last">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/televisions/tivi-lcd.html">
+<span>Tivi LCD</span>
+</a>
+</li>
+</ul>
+</li><li class="level1 nav-5-2 last parent">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/video.html">
+<span>Video</span>
+</a>
+<ul class="level1">
+<li class="level2 nav-5-2-11 first">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/video/projectors.html">
+<span>Projectors</span>
+</a>
+</li><li class="level2 nav-5-2-12 last">
+<a href="http://127.0.0.1/shopbing/tv-audio-video/video/streaming-media-players.html">
+<span>Streaming Media Players</span>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+</li><li class="level0 nav-6 level-top parent">
+<a href="http://127.0.0.1/shopbing/wearable-tech.html" class="level-top">
+<span>Thiết bị đeo công nghệ</span>
+</a>
+<ul class="level0">
+<li class="level1 nav-6-1 first">
+<a href="http://127.0.0.1/shopbing/wearable-tech/smartwatches.html">
+<span>Đồng hồ thông minh</span>
+</a>
+</li><li class="level1 nav-6-2">
+<a href="http://127.0.0.1/shopbing/wearable-tech/activity-trackers.html">
+<span>Thiết bị theo dõi sức khỏe &amp; vận động</span>
+</a>
+</li><li class="level1 nav-6-3">
+<a href="http://127.0.0.1/shopbing/wearable-tech/vr-headsets.html">
+<span>Mắt kính thông minh</span>
+</a>
+</li><li class="level1 nav-6-4 last">
+<a href="http://127.0.0.1/shopbing/wearable-tech/smart-trackers.html">
+<span>Thiết bị giám sát thông minh</span>
+</a>
+</li>
+</ul>
+</li><li class="level0 nav-7 level-top">
+<a href="http://127.0.0.1/shopbing/coupon.html" class="level-top">
+<span>MÃ GIẢM GIÁ</span>
+</a>
+</li><li class="level0 nav-8 level-top">
+<a href="http://127.0.0.1/shopbing/events.html" class="level-top">
+<span>SỰ KIỆN</span>
+</a>
+</li><li class="level0 nav-9 level-top last">
+<a href="http://127.0.0.1/shopbing/gift.html" class="level-top">
+<span>QUÀ TẶNG</span>
+</a>
+</li>				</ul>
+			</div>
+		</div>
+	
+</div>
+
+<div class="nav-container visible-lg visible-md">
+	
+		
+        <div id="pt_custommenu" class="pt_custommenu">
+		<div class="pt_custommenu_content">
+                                                                                                                                                                                                    
+        <div id="pt_menu_link" class="pt_menu">
+<div class="parentMenu">
+<ul>
+<li><a href="http://127.0.0.1/shopbing/bestsellerproductlist">Hot nhất</a></li>
+<li><a href="http://127.0.0.1/shopbing/newproductlist">Mới nhất</a></li>
+<li><a href="http://127.0.0.1/shopbing/contacts">Li&ecirc;n hệ</a></li>
+<li><a href="http://127.0.0.1/shopbing/blog">Tin tức</a></li>
+<li><a href="http://127.0.0.1/shopbing/helpcenter">Hỗ trợ</a></li>
+</ul>
+</div>
+</div>        
+        <div class="clearBoth"></div>
+		</div>
+		</div>
+	
+    
+</div>
+<script type="text/javascript">
+//<![CDATA[
+var CUSTOMMENU_POPUP_EFFECT = 0;
+var CUSTOMMENU_POPUP_TOP_OFFSET = 60;
+
+//]]>
+$jq(document).ready(function(){
+	if($jq('body').hasClass("cms-index-index"))
+	{
+		$jq("#pt_menu_home").addClass('act');
+	}
+})
+</script>
+

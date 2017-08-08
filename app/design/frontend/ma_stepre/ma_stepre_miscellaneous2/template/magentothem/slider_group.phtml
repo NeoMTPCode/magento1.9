@@ -1,0 +1,18 @@
+<div class="slider-group">
+	<div class="container">
+		<div class="row">
+			<div class="col-left col-lg-3 col-md-3 col-sm-12 col-xs-12">
+				
+			</div>
+			<div class="col-center col-lg-5 col-md-5 col-sm-12 col-xs-12">
+				<?php  echo $this->getLayout()->createBlock('banner7/banner7')->setTemplate('magentothem/banner7/banner7.phtml')->toHtml(); ?>
+			</div>
+			<div class="col-right col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<?php
+					$block = Mage::getModel('cms/block')->setStoreId(Mage::app()->getStore()->getId())->load('static_top');
+					echo Mage::getSingleton('widget/template_filter')->filter($block->getContent());
+				?>
+			</div>
+		</div>
+	</div>
+</div>

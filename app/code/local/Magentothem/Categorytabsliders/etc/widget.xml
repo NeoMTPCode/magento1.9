@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<widgets>
+    <categorytabsliders_advanced type="categorytabsliders/advanced" translate="name description" module="categorytabsliders">
+          <name>Category Slider Tabs</name>
+        <description>List of Broduct By Ids</description>
+        <is_email_compatible>1</is_email_compatible>
+        <parameters>
+            <title translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <label>title</label>
+                <type>text</type>
+            </title>
+			<identify translate="label">
+                <required>1</required>
+                <visible>1</visible>
+               
+                <label>Identify</label>
+                <type>text</type>
+				<description>Text must be like title but no have white space or special sign</description>
+            </identify>
+            <cat_ids translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <label>Category ids</label>
+                <type>text</type>
+            </cat_ids>
+            <template>
+                <required>1</required>
+                <visible>1</visible>
+                
+                <label>Template</label>
+                <type>select</type> 
+                <values>
+                    <default translate="label">
+                        <value>magentothem/categorytabsliders/categorytabsliders.phtml</value>
+                        <label>categorytabsliders</label>
+                    </default>
+                </values>
+            </template>
+            <products_count translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <value>15</value>
+                <label>Number of Products to Display</label>
+                <type>text</type>
+            </products_count>
+			<items_default translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <value>6</value>
+                <label>items Default</label>
+                <type>text</type>
+            </items_default>
+			<items_desktop translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <value>5</value>
+                <label>Items On Desktop</label>
+                <type>text</type>
+            </items_desktop>
+			<items_desktop_small translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <value>3</value>
+                <label>Items On Desktop Small</label>
+                <type>text</type>
+            </items_desktop_small>
+			<items_tablet translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <value>2</value>
+                <label>Items On Tablet</label>
+                <type>text</type>
+            </items_tablet>
+			<items_mobile translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <value>1</value>
+                <label>items On Mobile</label>
+                <type>text</type>
+            </items_mobile>
+			<row_show translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <value>1</value>
+                <label>Number Rows Show</label>
+                <type>text</type>
+            </row_show>
+			<width_thumbnail translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <value>135</value>
+                <label>Width Thumbnail</label>
+                <type>text</type>
+            </width_thumbnail>
+			<height_thumbnail translate="label">
+                <required>1</required>
+                <visible>1</visible>
+                <value>135</value>
+                <label>Height Thumbnail</label>
+                <type>text</type>
+            </height_thumbnail>
+        </parameters>
+    </categorytabsliders_advanced>
+</widgets>

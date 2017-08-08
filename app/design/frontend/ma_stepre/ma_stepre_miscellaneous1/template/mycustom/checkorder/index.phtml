@@ -1,0 +1,208 @@
+<?php
+
+if (!$this->getCustomerOrderCollection()) {
+    Mage::app()->getResponse()->setRedirect(Mage::getBaseUrl());
+    return;
+}
+
+$customer = $this->getCurrentCustomer();
+$orderCollection = clone  $this->getCustomerOrderCollection();
+$orderCollection->clear();
+$codeOrder = $this->getRequest()->getParam('code');
+if ($codeOrder) {
+    $firstItem = $this->getCustomerOrderCollection()->addAttributeToFilter('increment_id', $codeOrder)->getFirstItem();
+} else {
+    $firstItem = $orderCollection->getFirstItem();
+}
+$symbol = Mage::app()->getLocale()->currency(Mage::app()->getStore()->getCurrentCurrencyCode())->getSymbol();
+
+$pendingPaymentSttCode = 'pending_payment';
+?>
+
+<div class="col-lg-12">
+    <h1>Tra cứu tình trạng đơn hàng</h1>
+    <div class="tracking-order-process">
+        <p class="order-id"><?php echo $this->__('Code Order: ') . $firstItem->getIncrementId(); ?></p>
+        <p class="status">Tình trạng đơn hàng: <span><?php echo $this->__($firstItem->getState()); ?></span></p>
+        <div class="row bs-wizard">
+            <div style="margin: 0 auto; width: auto">
+                <div class="col-lg-3 col-md-3 bs-wizard-step">
+                    <div class="text-center bs-wizard-stepnum">
+                        <p>Đặt hàng thành công</p>
+                        <span><?php echo $firstItem->getCreatedAt(); ?></span>
+
+                    </div>
+                    <div class="progress enable-checkorder-wizard">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="bs-wizard-dot enable-checkorder-wizard"></span>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3 bs-wizard-step">
+                    <div class="text-center bs-wizard-stepnum">
+                        <p>Shopbing đang xử lý đơn hàng</p>
+                        <span></span>
+
+                    </div>
+                    <div class="progress <?php echo $this->getEnableCss($firstItem->getState(), $firstItem->getStatus(), 'processing');?>">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="bs-wizard-dot <?php echo $this->getEnableCss($firstItem->getState(), $firstItem->getStatus(), 'processing');?>"></span>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3 bs-wizard-step">
+                    <div class="text-center bs-wizard-stepnum">
+                        <p>Đang vận chuyển</p>
+                        <span></span>
+                    </div>
+                    <div class="progress <?php echo $this->getEnableCss($firstItem->getState(), $firstItem->getStatus(), 'processing');?>">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="bs-wizard-dot <?php echo $this->getEnableCss($firstItem->getState(), $firstItem->getStatus(), 'processing');?>"></span>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3 bs-wizard-step">
+                    <div class="text-center bs-wizard-stepnum">
+                        <p>Giao hàng thành công</p>
+                        <span></span>
+
+                    </div>
+                    <div class="progress <?php echo $this->getEnableCss($firstItem->getState(), $firstItem->getStatus());?>">
+                        <div class="progress-bar"></div>
+                    </div>
+                    <span class="bs-wizard-dot <?php echo $this->getEnableCss($firstItem->getState(), $firstItem->getStatus());?>"></span>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="detail-toggle-show text-center hidden"><a href="#show-detail" class="show-detail"><p
+                        class="description">Chi tiết đơn hàng
+                    <br><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></p></a></div>
+
+    </div>
+    <!--                <h2>Thông tin đơn hàng</h2>-->
+    <div class="tracking-order-detail">
+        <div class="row top text-center">
+            <div class="col-lg-3 col-md-3 item">
+                <h4>Địa chỉ người nhận</h4>
+                <p><?php echo $customer->getName(); ?></p>
+                <p><?php echo $customer->getPrimaryShippingAddress(); ?></p>
+            </div>
+            <div class="col-lg-3 col-md-3 item">
+                <h4>Thời gian giao hàng &amp; Vận chuyển</h4>
+                <p><?php echo($firstItem->getShippingDescription()) ?></p>
+                <p><?php echo ($firstItem->getShippingAmount() == 0) ? $this->__('Free Shipping') : $firstItem->formatPrice($firstItem->getShippingAmount()) ?></p>
+            </div>
+            <div class="col-lg-3 col-md-3 item">
+                <h4>Thông tin thanh toán</h4>
+                <p><?php echo $customer->getName(); ?></p>
+                <p><?php echo $customer->getPrimaryBillingAddress(); ?></p>
+            </div>
+            <div class="col-lg-3 col-md-3 item">
+                <h4>Phương thức thanh toán</h4>
+                <p><?php echo $firstItem->getPayment()->getMethodInstance()->getTitle(); ?></p>
+            </div>
+        </div>
+        <div class="bottom">
+            <h4 class="text-center">Đơn hàng bao gồm</h4>
+            <table class="table table-responsive table-hover" style="width: 100%;">
+                <thead>
+                <tr>
+                    <th>Tên sản phẩm</th>
+                    <th>Số lượng</th>
+                </tr>
+                </thead>
+                <tbody>
+                <?php foreach ($firstItem->getAllItems() as $item): ?>
+                    <tr>
+                        <td>
+                            <a href="<?php echo $item->getProductUrl(); ?>"
+                               target="_blank"><?php echo $item->getName(); ?></a>
+                        </td>
+                        <td>
+                            <strong class="hidden-lg hidden-md">Số
+                                lượng: </strong><?php echo $item->getQtyOrdered() + 0; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td><strong>Tổng</strong></td>
+                    <td><strong><?php echo $firstItem->formatPrice($firstItem->getGrandTotal()); ?></strong></td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <!--        --><?php //array_shift($orderCollection);?>
+        <div class="row distance-top">
+            <div class="col-lg-12">
+                <h1 class="text-center">Các đơn hàng khác</h1>
+                <div class="dashboard-order have-margin">
+                    <table class="table table-responsive table-hover">
+                        <thead>
+                        <tr>
+                            <th>
+                                <span class="hidden-xs hidden-sm hidden-md">Mã đơn hàng</span>
+                                <span class="hidden-lg">Code</span>
+                            </th>
+                            <th>Ngày mua</th>
+                            <th>Sản phẩm</th>
+                            <th>Tổng tiền</th>
+                            <th>
+                                <span class="hidden-xs hidden-sm hidden-md">Trạng thái <br> đơn hàng</span>
+                                <span class="hidden-lg">Trạng thái</span>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <?php
+                        $orderCollection->addFieldToFilter('increment_id', array('neq' => $firstItem->getIncrementId()));
+                        foreach ($orderCollection as $order):
+                            ?>
+                            <tr>
+                                <td>
+                                    <a href="?<?php echo 'code=' . $order->getRealOrderId(); ?>"><?php echo $order->getRealOrderId(); ?></a>
+                                </td>
+                                <td><?php echo $this->formatDate($order->getCreatedAtStoreDate()); ?></td>
+                                <td>
+                                    <?php
+                                    $productName = '';
+                                    foreach ($order->getAllItems() as $item):
+                                        $productName .= $item->getName() . "</br>";
+                                    endforeach;
+                                    echo $productName;
+                                    ?>
+                                </td>
+                                <td><?php echo $order->formatPrice($order->getGrandTotal()); ?></td>
+                                <td>
+                    <span class="order-status">
+                            <?php
+                            if ($order->getStatus() == $pendingPaymentSttCode): ?>
+                                <a href="<?php echo $this->getUrl('', array('_direct' => 'checkout/onepage/repayment', '_query' => 'code=' . $order->getRealOrderId())); ?>"
+                                   data-code="<?php echo $order->getRealOrderId(); ?>" type="button"
+                                   id="btn-replaceorder" class="btn btn-danger btn-checkout"
+                                   onclick="window.location='/checkout/payment/repayment?code=12649662'">
+                                <?php echo $this->__('Reorder') ?>
+                            </a>
+                            <?php else:; ?>
+                                <?php echo $this->__($order->getStatusLabel()) ?>
+                            <?php endif; ?>
+                    </span>
+                                </td>
+                            </tr>
+                        <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="pull-right"><a href="/sales/order/history" class="order-history-link">Lịch sử đơn hàng <i
+                                class="fa fa-angle-right"></i></a></div>
+            </div>
+        </div>
+    </div>
+</div>

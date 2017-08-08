@@ -1,0 +1,11 @@
+a:5:{i:0;s:24:"Argument must be numeric";i:1;s:1324:"#0 F:\xampp\htdocs\shopbing\lib\Zend\Pdf\Canvas\Abstract.php(1049): Zend_Pdf_Element_Numeric->__construct(NULL)
+#1 F:\xampp\htdocs\shopbing\app\code\local\Mycustom\Invoice\Model\Order\Pdf\Invoice.php(42): Zend_Pdf_Canvas_Abstract->drawText('Invoice # 50000...')
+#2 F:\xampp\htdocs\shopbing\app\code\core\Mage\Adminhtml\Controller\Sales\Invoice.php(119): Mycustom_Invoice_Model_Order_Pdf_Invoice->getPdf(Array)
+#3 F:\xampp\htdocs\shopbing\app\code\core\Mage\Adminhtml\controllers\Sales\Order\InvoiceController.php(489): Mage_Adminhtml_Controller_Sales_Invoice->printAction()
+#4 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Mage_Adminhtml_Sales_Order_InvoiceController->printAction()
+#5 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('print')
+#6 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#7 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#8 F:\xampp\htdocs\shopbing\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#9 F:\xampp\htdocs\shopbing\index.php(83): Mage::run('', 'store')
+#10 {main}";s:3:"url";s:102:"/shopbing/index.php/admin/sales_order_invoice/print/invoice_id/1/key/a490ca1c593f314bcae6c14dc2451d73/";s:11:"script_name";s:19:"/shopbing/index.php";s:4:"skin";s:2:"en";}

@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<layout version="0.1.0">
+    <checkorder_index_index>
+        <label>Check Order</label>
+        <remove name="left"/>
+        <reference name="root">
+            <action method="setTemplate"><template>page/1column.phtml</template></action>
+        </reference>
+        <reference name="content">
+            <block type="checkorder/index" name="checkorder.index" template="mycustom/checkorder/index.phtml"></block>
+        </reference>
+    </checkorder_index_index>
+</layout>

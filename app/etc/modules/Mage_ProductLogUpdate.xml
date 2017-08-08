@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+<modules>
+    <Mage_ProductLogUpdate>
+        <active>false</active>
+        <!--core, community or local.-->
+        <codePool>local</codePool>
+    </Mage_ProductLogUpdate>
+</modules>
+</config>

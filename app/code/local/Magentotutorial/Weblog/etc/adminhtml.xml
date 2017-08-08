@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<config>
+    <menu>
+        <magentotutorial translate="title" module="weblog">
+            <title>Log History</title>
+            <sort_order>40</sort_order>
+            <children>
+                <weblog translate="title" module="weblog">
+                    <title>Product Price</title>
+                    <sort_order>0</sort_order>
+                    <action>adminhtml/weblog/index</action>
+                </weblog>
+            </children>
+        </magentotutorial>
+    </menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <magentotutorial translate="title">
+                        <title>Log History</title>
+                        <sort_order>100</sort_order>
+                        <children>
+                            <weblog translate="title">
+                                <title>Product Price</title>
+                                <sort_order>0</sort_order>
+                            </weblog>
+                        </children>
+                    </magentotutorial>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

@@ -1,0 +1,169 @@
+<?php  $_order = $this->getOrder() ?>
+<table class="data-table" id="my-orders-table" summary="<?php echo Mage::helper('core')->quoteEscape($this->__('Items Ordered')) ?>">
+<!--    <col />-->
+<!--    <col width="1" />-->
+<!--    <col width="1" />-->
+<!--    <col width="1" />-->
+<!--    <col width="1" />-->
+    <thead>
+        <tr>
+            <th colspan="2" class="col-md-6"><?php echo $this->__('Product Name') ?></th>
+<!--            <th>--><?php //echo $this->__('SKU') ?><!--</th>-->
+            <th class="a-right col-md-2"><?php echo $this->__('Price') ?></th>
+            <th class="a-center col-md-2"><?php echo $this->__('Qty') ?></th>
+            <th class="a-right col-md-2"><?php echo $this->__('Subtotal') ?></th>
+        </tr>
+    </thead>
+    <tfoot>
+        <?php echo $this->getChildHtml('order_totals') ?>
+    </tfoot>
+        <?php $_items = $_order->getItemsCollection(); ?>
+        <?php $_index = 0; ?>
+            <?php $_count = $_items->count(); ?>
+        <?php foreach ($_items as $_item): ?>
+        <?php if ($_item->getParentItem()) continue; ?>
+        <tbody>
+            <?php echo $this->getItemHtml($_item) ?>
+            <?php if($this->helper('giftmessage/message')->getIsMessagesAvailable('order_item', $_item) && $_item->getGiftMessageId()): ?>
+            <tr class="border<?php echo ($_index++ > $_count ?' last':'') ?>" id="order-item-gift-message-<?php echo $_item->getId() ?>" style="display:none;">
+                <?php $_giftMessage=$this->helper('giftmessage/message')->getGiftMessageForEntity($_item); ?>
+                <td class="gift-message-row" colspan="7">
+                    <a href="#" title="<?php echo Mage::helper('core')->quoteEscape($this->__('Close')) ?>" onclick="return giftMessageToogle('<?php echo $_item->getId() ?>');" class="btn-close"><?php echo $this->__('Close') ?></a>
+                    <dl class="gift-message">
+                        <dt><strong><?php echo $this->__('From:') ?></strong> <?php echo $this->escapeHtml($_giftMessage->getRecipient()) ?></dt>
+                        <dt><strong><?php echo $this->__('To:') ?></strong> <?php echo $this->escapeHtml($_giftMessage->getSender()) ?></dt>
+                        <dd><?php echo $this->helper('giftmessage/message')->getEscapedGiftMessage($_item) ?></dd>
+                    </dl>
+                </td>
+            </tr>
+            <?php endif ?>
+        </tbody>
+        <?php endforeach; ?>
+</table>
+<div style="float: right; margin: 30px 0px;">
+<?php if($_order->getStatus() == 'pending_payment'):?>
+    <a href="<?php echo $this->getUrl('', array('_direct'=>'checkout/onepage/repayment', '_query'=>'code='. $_order->getRealOrderId())); ?>"
+       class="link-reorder btn btn-danger"><?php echo $this->__('Repayment') ?></a>
+<?php endif; ?>
+<a style="margin-left: 10px;" class="btn btn-danger" data-toggle="modal"
+   data-target="#modal-quit-order" id="<?php echo $_order->getRealOrderId(); ?>"><?php echo $this->__('Quit Order') ?></a>
+
+<?php
+$start_date = new DateTime('');
+$since_start = $start_date->diff(new DateTime($_order->getCreatedAt()));
+if($_order->getState() == 'complete' && $since_start->days <= 7):
+?>
+    <a style="margin-left: 10px;" class="btn btn-danger" data-toggle="modal"
+       data-target="#modal-return-order" id="<?php echo $_order->getRealOrderId(); ?>"><?php echo $this->__('Return Items') ?></a>
+<?php endif; ?>
+</div>
+
+<!-- Modal Quit Order-->
+<div class="modal" id="modal-quit-order" role="dialog">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog vertical-align-center">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Gửi yêu cầu hủy đơn hàng</h4>
+                </div>
+                <div class="modal-body" style="padding: 20px;">
+                    <form action="<?php echo Mage::getUrl('sales/order/cancelorder') ?>" method="post">
+                        <fieldset>
+                            <h2><label>Lý do hủy đơn hàng #<span class="order-id-select"><?php echo $_order->getRealOrderId()?></span></label>
+                            </h2>
+                            <p><b>Lưu ý</b>: Mã giảm giá vẫn có thể áp dụng cho đơn hàng khác sau khi hủy đơn hàng
+                                này
+                                (với các điều kiện áp dụng tương tự, kể cả thời hạn sử dụng mã)</p>
+
+                            <input type="hidden" name="increment_id"
+                                   id="increment_id" value="<?php echo $_order->getRealOrderId()?>"/>
+                            <div class="form-group">
+                                <label for="exampleSelect1">Lý do hủy đơn hàng</label>
+                                <select class="form-control" id="exampleSelect1">
+                                    <option>Thay đổi thông tin đơn hàng</option>
+                                    <option>Chọn nhầm sản phẩm</option>
+                                    <option>Lý do khác</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleTextarea">Ghi chú</label>
+                                <textarea class="form-control" id="exampleTextarea" name="exampleTextarea" rows="3"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Đồng ý</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Modal Return Order -->
+<div class="modal" id="modal-return-order" role="dialog">
+    <div class="vertical-alignment-helper">
+        <div class="modal-dialog modal-lg vertical-align-center">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Lý do trả hàng</h4>
+                </div>
+                <div class="modal-body" style="padding: 20px;">
+                    <form action="<?php echo Mage::getUrl('sales/order/return') ?>" method="post">
+                        <fieldset>
+                            <h2><label>1. Chọn sản phẩm mà bạn muốn trả *</label></h2>
+                            <table class="table">
+                                <thead class="thead-default">
+                                    <tr>
+                                        <th><?php echo $this->__('Product');?></th>
+                                        <th><?php echo $this->__('Return Reason');?></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <?php foreach ($_items as $_item): ?>
+                                        <td>
+                                            <input type="hidden" name="increment_id" value="<?php echo $_order->getIncrementId();?>"/>
+                                            <input type="checkbox" class="col-md-1" name="item_id[]" value="<?php echo $_item->getId();?>" style="height: 20px; width:20px;"/>
+                                            <?php echo  $_product = Mage::getModel('catalog/product')->load($_item->getProductId()); ?>
+                                                <img style="float: left; margin-right: 10px;" src="<?php echo Mage::helper('catalog/image')->init($_product, 'thumbnail')->resize(100);?>"
+                                                 alt="Img Product"/>
+                                            <h3 class="product-name"><?php echo $this->escapeHtml($_item->getName()) ?></h3>
+                                        </td>
+                                        <td>
+                                            <select class="form-control" name="reason" id="exampleSelect1">
+                                                <option>Thay đổi thông tin đơn hàng</option>
+                                                <option>Chọn nhầm sản phẩm</option>
+                                                <option>Lý do khác</option>
+                                            </select>
+                                        </td>
+                                        <?php endforeach;?>
+                                    </tr>
+                                </tbody>
+                            </table>
+                                <div class="form-group">
+                                    <label for="exampleTextarea">Ghi chú</label>
+                                    <textarea placeholder="Lý do đổi trả" class="form-control" id="exampleTextarea" name="note" rows="3"></textarea>
+                                </div>
+                                <h2><label>2. Bạn muốn đổi trả sản phẩm như thế nào? *</label></h2>
+                                <div class="radio-button">
+                                    <label><input type="radio" name="type_return" value="Đổi sản phẩm cùng loại">Đổi sản phẩm cùng loại</label></br>
+                                    <label><input type="radio" name="type_return" value="Hoàn tiền qua số thẻ quý khách sử dụng để thanh toán">Hoàn tiền qua số thẻ quý khách sử dụng để thanh toán</label></br>
+                                    <label><input type="radio" name="type_return" value="Hoàn trả tiền cho bạn">Hoàn trả tiền cho bạn</label>
+                                </div>
+                                <h2><label>3. Vui lòng chọn phương thức đổi trả ? *</label></h2>
+                                <div class="radio-button">
+                                    <label><input type="radio" name="method_return" value="Đến đơn vị trả hàng">Đến đơn vị trả hàng</label><br>
+                                        <label><input type="radio" name="method_return" value="Đổi trả hàng tại bưu cục">Đổi trả hàng tại bưu cục</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Đồng ý</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">decorateTable('my-orders-table', {'tbody' : ['odd', 'even'], 'tbody tr' : ['first', 'last']})</script>

@@ -1,0 +1,15 @@
+<div class="left1-group">
+	<div class="row">
+		<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+			<?php
+				$block = Mage::getModel('cms/block')->setStoreId(Mage::app()->getStore()->getId())->load('banner_left');
+				echo Mage::getSingleton('widget/template_filter')->filter($block->getContent());
+			?>
+			<?php  echo $this->getLayout()->createBlock('tag/popular')->setTemplate('tag/popular.phtml')->toHtml(); ?>
+			<?php  echo $this->getLayout()->createBlock('newsletter/subscribe')->setTemplate('newsletter/subscribe.phtml')->toHtml(); ?>
+		</div>
+		<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+			<?php  echo $this->getLayout()->createBlock('newproductslider/newproductslider')->setTemplate('magentothem/newproductslider/newproductslider.phtml')->toHtml(); ?>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Mycustom_Configurable>
+            <version>0.1.1</version>
+        </Mycustom_Configurable>
+    </modules>
+    <global>
+        <models>
+            <configurable>
+                <class>Mycustom_Configurable_Model</class>
+            </configurable>
+        </models>
+        <blocks>
+            <configurable>
+                <class>Mycustom_Configurable_Block</class>
+            </configurable>
+            <catalog>
+                <rewrite>
+                    <product_view_type_configurable>Mycustom_Configurable_Block_Frontend_Configurable</product_view_type_configurable>
+                </rewrite>
+            </catalog>
+        </blocks>
+    </global>
+    <frontend>
+        <routers>
+            <Mycustom_Configurable_router>
+                <use>standard</use>
+                <args>
+                    <module>Mycustom_Configurable</module>
+                    <frontName>configurable</frontName>
+                </args>
+            </Mycustom_Configurable_router>
+        </routers>
+        <layout>
+            <updates>
+                <configurable module="Mycustom_Configurable">
+                    <file>configurable.xml</file>
+                </configurable>
+            </updates>
+        </layout>
+    </frontend>
+</config>

@@ -1,0 +1,12 @@
+a:5:{i:0;s:145:"Cannot send headers; headers already sent in F:\xampp\htdocs\shopbing\app\code\local\Mycustom\Checkout\controllers\OnepageController.php, line 33";i:1;s:1558:"#0 F:\xampp\htdocs\shopbing\lib\Zend\Controller\Response\Abstract.php(148): Zend_Controller_Response_Abstract->canSendHeaders(true)
+#1 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Response\Http.php(107): Zend_Controller_Response_Abstract->setRedirect('http://127.0.0....', 302)
+#2 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Action.php(711): Mage_Core_Controller_Response_Http->setRedirect('http://127.0.0....')
+#3 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Action.php(689): Mage_Core_Controller_Varien_Action->setRedirectWithCookieCheck('/standard/redir...', Array)
+#4 F:\xampp\htdocs\shopbing\app\code\local\Mycustom\Checkout\controllers\OnepageController.php(42): Mage_Core_Controller_Varien_Action->_redirect('/standard/redir...', Array)
+#5 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Action.php(418): Mycustom_Checkout_OnepageController->updateOrderAction()
+#6 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Router\Standard.php(254): Mage_Core_Controller_Varien_Action->dispatch('updateOrder')
+#7 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Controller\Varien\Front.php(172): Mage_Core_Controller_Varien_Router_Standard->match(Object(Mage_Core_Controller_Request_Http))
+#8 F:\xampp\htdocs\shopbing\app\code\core\Mage\Core\Model\App.php(365): Mage_Core_Controller_Varien_Front->dispatch()
+#9 F:\xampp\htdocs\shopbing\app\Mage.php(684): Mage_Core_Model_App->run(Array)
+#10 F:\xampp\htdocs\shopbing\index.php(83): Mage::run('', 'store')
+#11 {main}";s:3:"url";s:39:"/shopbing/checkout/onepage/updateOrder/";s:11:"script_name";s:19:"/shopbing/index.php";s:4:"skin";s:2:"vn";}

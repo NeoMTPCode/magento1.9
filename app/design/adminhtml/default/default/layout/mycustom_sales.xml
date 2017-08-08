@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_return_edit>
+        <reference name="head">
+            <action method="addCss">
+                <!--<name>css/bootstrap.css</name>-->
+            </action>
+        </reference>
+    </adminhtml_return_edit>
+</layout>

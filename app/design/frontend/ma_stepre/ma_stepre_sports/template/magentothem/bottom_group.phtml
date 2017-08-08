@@ -1,0 +1,9 @@
+<div class="bottom-group">
+	<div class="container">
+		<?php
+			$block = Mage::getModel('cms/block')->setStoreId(Mage::app()->getStore()->getId())->load('categorytab');
+			echo Mage::getSingleton('widget/template_filter')->filter($block->getContent());
+		?>
+		<?php  echo $this->getLayout()->createBlock('blog/menu_sidebar')->setTemplate('magentothem_blog/blog_slide.phtml')->toHtml(); ?>
+	</div>
+</div>

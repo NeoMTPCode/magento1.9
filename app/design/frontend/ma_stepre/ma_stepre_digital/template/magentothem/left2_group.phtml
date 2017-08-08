@@ -1,0 +1,4 @@
+<?php
+	$block = Mage::getModel('cms/block')->setStoreId(Mage::app()->getStore()->getId())->load('categorytab');
+	echo Mage::getSingleton('widget/template_filter')->filter($block->getContent());
+?>

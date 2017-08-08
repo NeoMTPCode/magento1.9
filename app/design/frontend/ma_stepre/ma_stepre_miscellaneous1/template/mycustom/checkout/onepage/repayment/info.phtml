@@ -1,0 +1,112 @@
+<?php
+
+$sessionCustomer = Mage::getSingleton("customer/session");
+//Check if user loggin or not
+if (!$sessionCustomer->isLoggedIn()) {
+    Mage::app()->getResponse()->setRedirect(Mage::getBaseUrl());
+    return;
+}
+
+//GET INFORMATION ORDER
+$_order_id = $this->getRequest()->getParam('code');
+//GET INFORMATION USER
+$customer = $sessionCustomer->getCustomer();
+//GET METHODS
+$currentStoreId = Mage::app()->getStore()->getStoreId();
+$methods = Mage::getModel('payment/config')->getActiveMethods($currentStoreId);
+$oneMethod = count($methods) <= 1;
+//echo Mage::getStoreConfig('payment/motpay/order_status', $currentStoreId);
+?>
+<script type="text/javascript" src="<?php echo $this->getJsUrl('varien/accordion.js') ?>"></script>
+<script type="text/javascript" src="<?php echo $this->getSkinUrl('js/opcheckout.js') ?>"></script>
+<script type="text/javascript">
+    //<![CDATA[
+    var payment = new Payment('update-order-repayment', '<?php echo $this->getUrl('checkout/onepage/updateOrder') ?>');
+    payment.init();
+    //]]>
+</script>
+<form id="update-order-repayment" action="<?php echo Mage::getUrl('checkout/onepage/updateOrder') ?>" method="post">
+<?php if (empty($methods)): ?>
+    <dt>
+        <?php echo $this->__('No Payment Methods') ?>
+    </dt>
+
+<?php else:?>
+<div class="radio_button">
+<?php   foreach ($methods as $key=>$_method):
+        $_code = $_method->getCode();
+?>
+        <dt id="dt_method_<?php echo $_code ?>">
+            <?php if (!$oneMethod): ?>
+                <input style="display: inline" id="p_method_<?php echo $_code ?>" value="<?php echo $_code ?>" type="radio"
+                       name="payment[method]" title="<?php echo $this->escapeHtml($_method->getTitle()) ?>"
+                       onclick="payment.switchMethod('<?php echo $_code ?>')"<?php if ($this->getSelectedMethodCode() == $_code): ?> checked="checked"<?php endif; ?>
+                       value="<?php echo $_code ?>" class="radio validate-one-required-by-name"/>
+            <?php else: ?>
+                <span class="no-display"><input id="p_method_<?php echo $_code ?>" value="<?php echo $_code ?>"
+                                                type="radio" name="payment[method]" checked="checked"
+                                                class="radio"/></span>
+                <?php $oneMethod = $_code;
+                ?>
+            <?php endif; ?>
+            <label for="p_method_<?php echo $_code ?>"><?php echo $this->escapeHtml($_method->getTitle()) ?></label>
+        </dt>
+        <dd id="dd_method_<?php echo $_code ?>">
+            <?php
+//            $this->getLayout()->createBlock('core/template')->setTemplate('payment/form/'. $_code .'.phtml')->toHtml();
+            ?>
+
+        </dd>
+    <?php endforeach;?>
+</div>
+<?php endif; ?>
+
+<?php echo $this->getChildChildHtml('additional');?>
+<div class="info-user">
+    <div class="form-group row">
+        <h5 class="col-lg-12 is-mt">Sử dụng Họ tên &amp; Số điện thoại của địa chỉ giao hàng:</h5>
+    </div>
+    <div class="around-info">
+        <p>Họ và Tên: <?php echo $customer->getName(); ?></p>
+        <p>Số điện thoại: <?php echo $customer->getEmail(); ?></p>
+    </div>
+</div>
+    <input type="hidden" name="orderId" value="<?php echo $_order_id;?>" />
+
+    <div class="col-lg-6">
+    <input onclick="payment.save()" type="submit" class="btn btn-block btn-danger btn-checkout" value="THANH TOÁN LẠI" />
+    <p class="note">(Xin vui lòng kiểm tra lại đơn hàng trước khi Đặt Mua)</p>
+</div>
+</form>
+<!--<button type="button" class="button" onclick="payment.save()"><span><span>Continue</span></span></button>-->
+<script type="text/javascript">
+    //<![CDATA[
+    var customForm = new VarienForm('update-order-repayment');
+    Translator.translate('Please select one of the above options.');
+
+<!--    --><?php //echo $this->getChildChildHtml('scripts'); ?>
+//    payment.init();
+//    <?php //if (is_string($oneMethod)): ?>
+//    payment.switchMethod('<?php //echo $oneMethod ?>//');
+//    <?php //endif; ?>
+//    jQuery('#btn-placeorder').click(function () {
+//        var saveUrl = '<?php //echo $this->getUrl('checkout/onepage/updateOrder');?>//';
+//        jQuery.ajax({
+//            url: saveUrl,
+//            type: 'post',
+//            data: {orderId: '<?php //echo $_order_id;?>//',
+//                    code: jQuery("input[type='radio']:checked").val()}
+//            }).done(function(result) {
+//                alert(result);
+//            });
+//    });
+
+    //    $order = Mage::getModel('sales/order')->loadByIncrementId($order_id);
+    //    $order->setData('state', "complete");
+    //    $order->setStatus("complete");
+    //    $history = $order->addStatusHistoryComment('Order was set to Complete by our automation tool.', false);
+    //    $history->setIsCustomerNotified(false);
+    //    $order->save();
+    //    $this->_redirect('checkout/onepage/success', array('_secure' => true));
+    //]]>
+</script>

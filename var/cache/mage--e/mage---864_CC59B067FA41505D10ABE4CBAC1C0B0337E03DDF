@@ -1,0 +1,30 @@
+
+<form id="search_mini_form_contents" action="http://127.0.0.1/shopbing/catalogsearch/result/?___SID=U" method="get">
+    <div class="form-search">
+        <label for="search_category">Search:</label>
+        <div class="box-search-select">
+			
+			<select class="selectpicker"  id="cat" name="cat">
+				<option value="">All Categories</option>
+									<option value="454">ĐIỆN THOẠI VÀ MÁY TÍNH BẢNG</option>
+																									<option value="468">MÁY TÍNH & LAPTOP</option>
+																									<option value="487">MÁY ẢNH VÀ LINH KIỆN</option>
+																									<option value="512">Âm thanh</option>
+																									<option value="503">TV, Video</option>
+																									<option value="520">Thiết bị đeo công nghệ</option>
+																									<option value="534">MÃ GIẢM GIÁ</option>
+																									<option value="535">SỰ KIỆN</option>
+																									<option value="536">QUÀ TẶNG</option>
+																							</select>
+			
+			<input id="search_category" type="text" name="q" class="input-text" />
+				<button type="submit" title="Search" class="button"><span><span><i class="fa fa-search ">&nbsp;</i>Search</span></span></button>
+			<!--<div id="search_autocomplete" class="search-autocomplete"></div>-->
+		</div>	
+    </div>
+</form>
+<script type="text/javascript">
+    jQuery('.selectpicker').selectpicker({
+        'selectedText': 'cat'
+    });
+</script>

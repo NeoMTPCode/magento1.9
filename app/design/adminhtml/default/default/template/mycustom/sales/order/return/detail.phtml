@@ -1,0 +1,37 @@
+<?php
+//Set default item render in constuctor block
+$this->addItemRender('default', 'sales/order_item_renderer_default', 'mycustom/sales/order/items/renderer/default.phtml');
+$this->addItemRender('grouped', 'sales/order_item_renderer_grouped', 'mycustom/sales/order/items/renderer/default.phtml');
+$this->getLayout()->getBlock('head')->addCss('css/bootstrap.css');
+
+    $_increment_id = Mage::registry('return_data')->getData('order_id');
+    $_order = Mage::getModel('sales/order')->loadByIncrementId($_increment_id);
+    $_product_items = Mage::registry('return_data')->getData('product_items');
+    $_items_id = explode(' ',$_product_items);
+    $_items = $_order->getItemsCollection()->addFieldToFilter('item_id', array('IN' => $_items_id));
+?>
+
+<table width="100%" class="table table-responsive" id="my-orders-table" summary="<?php echo Mage::helper('core')->quoteEscape($this->__('Items Ordered')) ?>">
+    <thead style="background: #f2f2f2;">
+    <tr>
+        <th colspan="2" class="col-md-6 a-center"><?php echo $this->__('Product Name') ?></th>
+        <!--            <th>--><?php //echo $this->__('SKU') ?><!--</th>-->
+        <th class="a-center col-md-2"><?php echo $this->__('Price') ?></th>
+        <th class="a-center col-md-2"><?php echo $this->__('Qty') ?></th>
+        <th class="a-center col-md-2"><?php echo $this->__('Subtotal') ?></th>
+    </tr>
+    </thead>
+    <tfoot>
+    <?php echo $this->getChildHtml('order_totals') ?>
+    </tfoot>
+    <?php foreach ($_items as $_item):
+        ?>
+<!--        --><?php //if ($_item->getParentItem()) continue; ?>
+        <?php
+            $_product = Mage::getModel('catalog/product')->load($_item);
+        ?>
+        <tbody>
+        <?php echo $this->getItemHtml($_item);?>
+        </tbody>
+    <?php endforeach; ?>
+</table>

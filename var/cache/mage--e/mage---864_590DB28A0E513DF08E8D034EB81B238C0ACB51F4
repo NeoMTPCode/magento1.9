@@ -1,0 +1,141 @@
+<div class="block-bottom">
+	<div class="container">
+		<div class="container-inner">
+					</div>
+	</div>
+</div>
+<div class="brand-slider">
+	<div class="container">
+		<div class="container-inner">
+			<div class="ma-brand-slider-contain">
+    	
+		<!--<div class="ma-title">
+			<h2>Our brands</h2>
+		</div>-->
+		<div class="row">
+          	<ul class="owl">
+				            </ul>
+			</div>
+            <script type="text/javascript">
+			       //<![CDATA[
+					$jq(document).ready(function(){					  
+					  $jq(".ma-brand-slider-contain .owl").owlCarousel({
+							autoPlay : true,
+							items : 8,
+							itemsDesktop : [1199,7],
+							itemsDesktopSmall : [980,5],
+							itemsTablet: [700,3],
+							itemsMobile : [400,2],
+							slideSpeed : 4000,
+							paginationSpeed : 4000,
+							rewindSpeed : 4000,
+							navigation : false,
+							stopOnHover : true,
+							pagination : false,
+							scrollPerPage:true,
+						});
+					});
+				//]]>
+				</script>	
+</div> 
+		</div>
+	</div>
+</div>
+<div class="ma-footer-static ma-footer-top">
+	<div class="footer-static">
+		<div class="container">
+			<div class="container-inner">
+				
+				<div class="footer-static-top">
+<div class="row">
+<div class="f-col col-sm-6 col-md-2 col-sms-6 col-smb-12">
+<div class="footer-static-title">
+<h3>My Account</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="#">My Account</a></li>
+<li><a href="#">Login</a></li>
+<li><a href="#">My Cart</a></li>
+<li><a href="#">Wishlist</a></li>
+<li class="last"><a href="#">Checkout</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col-24 col-sm-6 col-md-2 col-sms-6 col-smb-12">
+<div class="footer-static-title">
+<h3>Information</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="http://127.0.0.1/shopbing/catalog/seo_sitemap/category">Sitemap</a></li>
+<li><a href="http://127.0.0.1/shopbing/privacy-policy-cookie-restriction-mode">Privacy Policy</a></li>
+<li><a href="http://127.0.0.1/shopbing/customer/account/index">Your Account</a></li>
+<li><a href="http://127.0.0.1/shopbing/catalogsearch/advanced">Advanced Search</a></li>
+<li><a href="http://127.0.0.1/shopbing/privacy-policy-cookie-restriction-mode">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col-24 col-sm-6 col-md-5 col-sms-6 col-smb-12">
+<div class="footer-static-title">
+<h3>BRANDS ARE FAVORITES</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li><label>Tablets:</label> <a href="#">Apple</a><span class="sepector">,</span><a href="#">Samsung</a><span class="sepector">,</span><a href="#">Sony</a><span class="sepector">,</span><a href="#">Asus</a><span class="sepector">,</span><a href="#">HP</a><span class="sepector">,</span><a href="#">Lenovo</a><span class="sepector">,</span><a class="more" href="#">More ...</a></li>
+<li><label>Phone:</label> <a href="#">Apple</a><span class="sepector">,</span><a href="#">Samsung</a><span class="sepector">,</span><a href="#">Sony</a><span class="sepector">,</span><a href="#">Asus</a><span class="sepector">,</span><a href="#">FPT</a><span class="sepector">,</span><a href="#">BlackBerry</a><span class="sepector">,</span><a class="more" href="#">More ...</a></li>
+<li><label>Apple:</label> <a href="#">Iphone</a><span class="sepector">,</span><a href="#">Ipad</a><span class="sepector">,</span><a class="more" href="#">More ...</a></li>
+<li><label>Notebook:</label> <a href="#">Apple (Macbook)</a><span class="sepector">,</span><a href="#">Acer</a><span class="sepector">,</span><a href="#">Dell</a><span class="sepector">,</span><a href="#">HP</a><span class="sepector">,</span><a href="#">Lenovo</a><span class="sepector">,</span><a href="#">Sony</a><span class="sepector">,</span><a class="more" href="#">More ...</a></li>
+<li><label>Accessories:</label> <a href="#">Headset</a><span class="sepector">,</span><a href="#">leather bags and bumper</a><span class="sepector">,</span><a class="more" href="#">More ...</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col-3 col-sm-6 col-md-3 col-sms-6 col-smb-12"><a class="logo-footer" href="http://127.0.0.1/shopbing/"><img alt="ads" src="http://127.0.0.1/shopbing/media/wysiwyg/logo-shopbing.png" /></a>
+<div class="footer-static-content">
+<p class="des">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy...</p>
+<div class="footer-contact">
+<p class="adress"><span class="ft-left">Address: </span> <span class="ft-content">123 Main Street, Anytown, CA 12345 USA.</span></p>
+<p class="phone"><span class="ft-left">Phone: </span><span class="ft-content">(800) 123 456 789</span></p>
+<p class="fax"><span class="ft-left">Fax: </span><span class="ft-content">(800) 123 456 789</span></p>
+<p class="email"><span class="ft-left">Email: </span> <span class="ft-content">support@plazathemes.com</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>				<div class="row">
+					<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+						<div class="follow-payment">
+							<ul class="link-follow">
+<li class="first"><a class="twitter fa fa-twitter" href="https://twitter.com/plazathemes"><span>twitter</span></a></li>
+<li><a class="google fa fa-google-plus" href="https://plus.google.com/+PlazaThemesMagento/posts/"><span>google </span></a></li>
+<li><a class="facebook fa fa-facebook" href="https://www.facebook.com/plazathemes"><span>facebook</span></a></li>
+<li><a class="youtube fa fa-youtube" href="https://www.youtube.com/user/plazathemes"><span>youtube </span></a></li>
+<li><a class="flickr fa fa-flickr" href="https://www.flickr.com/photos/plaza-themes"><span>Flickr </span></a></li>
+<li><a class="in fa fa-instagram" href="https://www.youtube.com/user/plazathemes"><span>instagram </span></a></li>
+</ul>							<div class="footer-payment">
+<h2>Support payments :</h2>
+<a href="#"><img alt="" src="http://127.0.0.1/shopbing/media/wysiwyg/payment_1.png" /></a>
+</div>						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="ma-footer">
+	<div class="footer">
+		<div class="container">
+			<div class="container-inner">
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						<address style="text-align: center">Copyright  &copy; <a href="http://www.shopbing.xyz/">shopbing</a> . All Rights Reserved.</address>
+						<div id="back-top" class="hidden-xs"></div>
+					</div>
+<!--					<div class="col-md-6 col-xs-12">-->
+<!--						--><!--					</div>-->
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

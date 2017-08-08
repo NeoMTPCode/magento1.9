@@ -1,0 +1,57 @@
+ .timer-grid{float: left;width: 100%;padding: 3px 0 0 0;color: #000000;font-size: 18px; font-weight: 400;}
+ .timer-list{float: left;width: 100%;padding: 0;color: #000000;font-size: 18px;font-family: Montserrat; font-weight: 400;}
+ .timer-view{float: left;width: 100%;padding:2px 0 0 0px;color: #000000;font-size: 40px; font-family:Montserrat;font-weight: 400;}
+ .timer-view .day{}
+ .timer-view .hour{}
+ .timer-view .min{}
+ .timer-view .sec{}
+ .timer-compare{float: left;width: 100%;padding: 0;color: #000000;font-size: 22px;font-family: Montserrat; font-weight: 400;}
+ .timerspec{float: left;width: 100%;color: #1E7EC8;font-size: 13px;}
+ .timerdate{float: left;width: 100%;padding:0 0 3px 0;color: #1E7EC8;font-size: 12px;}
+ .timerdate .day{margin:1px 1px; width:20px; text-align: center;}
+ .timerdate .hour{margin:1px 1px;width:20px; text-align: center;}
+ .timerdate .min{margin:1px 1px; width:20px; text-align: center;}
+ .timerdate .sec{margin:1px 1px; width:20px; text-align: center;}
+
+.timer_product{
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:5px;
+}
+.timer_product .product-image img{
+margin:0px auto;
+}
+.ma-timer-container .item-inner:last-child .ma-box-content{ margin-bottom: 1px;}
+
+.ma-timer-container .box-timer{ 
+    position: absolute;
+    left: 0;
+    right: 0; 
+    margin: 0 auto;
+    bottom: 0;
+    padding: 0;
+}
+.box-time-date{
+    background: #9ed435;
+    opacity: 0.9;
+    font-size: 0;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 11px 0;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    float: left;
+}
+.box-time-date:after{
+    content: "";
+    height: 20px;
+    width: 1px;
+    background: #addf49;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+.sec:after{ display: none;}
+.box-time-date span{ display: block; font-size: 18px;font-weight: 500;}

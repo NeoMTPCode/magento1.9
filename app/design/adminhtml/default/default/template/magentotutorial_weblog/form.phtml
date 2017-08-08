@@ -1,0 +1,13 @@
+<h1>Hellooooooooooooooooooooo</h1>
+
+<form action="<?php echo Mage::getUrl('adminhtml/weblog/index') ?>" method="post">
+    <fieldset>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" />
+        <label for="post">Post</label>
+        <textarea id="post" name="post"></textarea>
+        <input type="submit" value="Add New Post" />
+    </fieldset>
+</form>
+
+<?php echo $this->methodblock(); ?>

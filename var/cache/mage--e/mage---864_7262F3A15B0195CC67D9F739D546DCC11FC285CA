@@ -1,0 +1,132 @@
+<div class="wine layout5">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+<div class="banner-static banner-left banner-left-wine"><a href="#"><img alt="ads" src="http://127.0.0.1/shopbing/media/wysiwyg/banner-category/banner-tivi_1.jpg" /></a></div>
+</div>
+<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+<div class="category-tab-container module-content">
+
+
+    <div class="ma-title">
+        <h2>Tivi - Video</h2>    </div>
+    <ul class="tabs tabs-wine  tab_categorys">
+                        <li class=""><p class="tab504-wine">Tivi</p></li>
+                            <li class="active"><p class="tab517-wine">Video</p></li>
+                </ul>
+
+    <div class="tab_container">
+                    <div id="tab504-wine" class="tab_content_wine">
+                                                <div class="category-tab-image">
+                                    </div>
+                                                <div class="category-tab-content">
+                    <div class="row">
+                        <ul class="owl">
+                                                            <li class='categorytab-item'>                                <div class="item-inner">
+                                    <div class="ma-box-content">
+                                        <div class="products">
+                                                                                        <a href="http://127.0.0.1/shopbing/internet-tivi-led-sony-40inch-full-hd-model-kdl-40w650d-den-144.html"
+                                               title="Internet Tivi LED Sony 40inch Full HD - Model KDL-40W650D (Đen)  "
+                                               class="product-image"><img
+                                                        src="http://127.0.0.1/shopbing/media/catalog/product/cache/9/small_image/606x780/9df78eab33525d08d6e5fb8d27136e95/9/_/9_1_19_2.jpg"
+                                                        alt="Internet Tivi LED Sony 40inch Full HD - Model KDL-40W650D (Đen)  "/></a>
+                                        </div>
+                                        <div class="content-box">
+                                            <div class="content-box-inner">
+                                                <h2 class="product-name"><a
+                                                            href="http://127.0.0.1/shopbing/internet-tivi-led-sony-40inch-full-hd-model-kdl-40w650d-den-144.html"
+                                                            title="Internet Tivi LED Sony 40inch Full HD - Model KDL-40W650D (Đen)  ">
+                                                        Internet Tivi LED Sony 40inch Full HD - Model KDL-40W650D (Đen)  </a>
+                                                </h2>
+                                                                                                                                                                                                                                                        
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-138">
+                                            <span class="price">11.884.600 VND</span>                                    </span>
+                        
+        </div>
+
+                                                                                                                                            </div>
+                                            <div class="actions clearfix">
+                                                                                                                                            </div>
+
+                                        </div>
+                                                                            </div>
+                                </div>
+                                </li>                                                                                </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $jq(document).ready(function () {
+                                                $jq("#tab504-wine .owl").owlCarousel({
+                            autoPlay: false,
+                            items: 4,
+                            itemsDesktop: [1199,3],
+                            itemsDesktopSmall: [980,3],
+                            itemsTablet: [700,2],
+                            itemsMobile: [400,1],
+                            slideSpeed: 3000,
+                            paginationSpeed: 3000,
+                            rewindSpeed: 3000,
+                            navigation: true,
+                            stopOnHover: true,
+                            pagination: false,
+                            scrollPerPage: true
+                        });
+                    });
+                </script>
+            </div><!-- #tab1 -->
+                    <div id="tab517-wine" class="tab_content_wine">
+                                                <div class="category-tab-image">
+                                    </div>
+                                                <div class="category-tab-content">
+                    <div class="row">
+                        <ul class="owl">
+                                                                                </ul>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $jq(document).ready(function () {
+                                                $jq("#tab517-wine .owl").owlCarousel({
+                            autoPlay: false,
+                            items: 4,
+                            itemsDesktop: [1199,3],
+                            itemsDesktopSmall: [980,3],
+                            itemsTablet: [700,2],
+                            itemsMobile: [400,1],
+                            slideSpeed: 3000,
+                            paginationSpeed: 3000,
+                            rewindSpeed: 3000,
+                            navigation: true,
+                            stopOnHover: true,
+                            pagination: false,
+                            scrollPerPage: true
+                        });
+                    });
+                </script>
+            </div><!-- #tab1 -->
+        
+    </div><!-- .tab_container -->
+
+</div> <!-- #container -->
+
+<script type="text/javascript">
+
+    $jq(document).ready(function () {
+
+        $jq(".tab_content_wine").hide();
+        $jq(".tab_content_wine:nth-child(2)").show();
+
+        $jq("ul.tabs-wine li").click(function () {
+            $jq("ul.tabs-wine li").removeClass("active");
+            $jq(this).addClass("active");
+            $jq(".tab_content_wine").hide();
+            var activeTab = $jq(this).find("p").attr('class');
+            $jq("#" + activeTab).fadeIn();
+        });
+    });
+
+</script> 
+</div>
+</div>
+</div>

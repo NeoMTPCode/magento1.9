@@ -1,0 +1,8 @@
+<?php $_technical_parameter = $this->getProduct()->getData('technical_parameter'); ?>
+
+<?php if ($_technical_parameter): ?>
+    <h2><?php echo $this->__('Technical Parameter') ?></h2>
+    <div class="std">
+        <?php echo $this->helper('catalog/output')->productAttribute($this->getProduct(), $_technical_parameter, 'technical_parameter') ?>
+    </div>
+<?php endif; ?>

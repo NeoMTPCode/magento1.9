@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout>
+    <adminhtml_catalog_product_customproduct>
+        <reference name="product_tabs">
+            <action method="addTab"><name>super</name><block>adminhtml/catalog_product_edit_tab_super_group</block></action>
+        </reference>
+    </adminhtml_catalog_product_customproduct>
+</layout>

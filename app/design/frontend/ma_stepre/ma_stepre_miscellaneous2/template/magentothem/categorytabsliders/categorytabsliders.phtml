@@ -1,0 +1,239 @@
+<?php
+$title = $this->getTitle();
+$identify = $this->getIdentify();
+$categoryIds = $this->getCatIds();
+$categoryIds = explode(',', $categoryIds);
+$_helper = $this->helper('catalog/output');
+$productsOnRow = $this->getProductsOnRow();
+if(!$productsOnRow) $productsOnRow = 3;
+if ( !$this->getWidthThumbnail() ){
+	$w_thumbnail = 135;
+} else {
+	$w_thumbnail = $this->getWidthThumbnail();
+}
+if( !$this->getHeightThumbnail() ){
+	$h_thumbnail = 135;
+ }
+else {
+	$h_thumbnail = $this->getHeightThumbnail();
+}
+?>
+
+<?php
+		$itemsDefault = $this->getItemsDefault();
+		$itemsDesktop = $this->getItemsDesktop();
+		$itemsDesktopSmall = $this->getItemsDesktopSmall();
+		$itemsTablet = $this->getItemsTablet();
+		$itemsMobile = $this->getItemsMobile();
+        $speed = Mage::getStoreConfig('categorytabsliders/categorytabsliders_config/speed');
+        $nav_ctrl = Mage::getStoreConfig('categorytabsliders/categorytabsliders_config/nav_ctrl');
+        $next_back = Mage::getStoreConfig('categorytabsliders/categorytabsliders_config/next_back');
+        $show_price = Mage::getStoreConfig('categorytabsliders/categorytabsliders_config/show_price');
+        $review = Mage::getStoreConfig('categorytabsliders/categorytabsliders_config/show_review');
+		$addtocart = Mage::getStoreConfig('categorytabsliders/categorytabsliders_config/addtocart');
+        $addtowishlist = Mage::getStoreConfig('categorytabsliders/categorytabsliders_config/addtowishlist');
+        $addtocompare = Mage::getStoreConfig('categorytabsliders/categorytabsliders_config/addtocompare');
+        $showdes = Mage::getStoreConfig('categorytabsliders/categorytabsliders_config/description');
+        $maxlength = Mage::getStoreConfig('categorytabsliders/categorytabsliders_config/maxlength');
+        $rows = $this->getRowShow();
+		$title = $this->getTitle();
+?>
+<div class="category-tab-container module-content">
+
+
+		<div class="ma-title">
+			<?php 	echo '<h2>'.$title.'</h2>'; ?>
+		</div>
+		<ul class="tabs tabs<?php echo '-'.$identify;?>  tab_categorys"> 
+		   <?php 
+			$k = 0;
+			foreach($categoryIds as $cate_id) {
+				if(count($categoryIds) > 1)
+					$step = 1;
+				else
+					$step = 0;
+				$cate_model = Mage::getModel('catalog/category');
+				$cateName = $cate_model->load($cate_id)->getName();
+				
+				if($cateName) {
+		   ?>
+					<li class="<?php if($k==$step){ echo "active"; }?>"><p class="tab<?php echo $cate_id.'-'.$identify;?>"><?php  echo $cateName; ?></p></li>
+			<?php }  $k++; } ?>
+		</ul>
+	
+
+
+	<div class="tab_container"> 
+		<?php foreach($categoryIds as $cate_id) {
+		?>
+		 <div id="tab<?php echo $cate_id.'-'.$identify;?>" class="tab_content_<?php echo $identify; ?>"> 
+			<?php $_productCollection = $this->getProductCate($cate_id); ?>
+			<?php $cattab = Mage::getModel('catalog/category')->load($cate_id)->getCattabImage() ?>
+			<?php $_collectionSize = $_productCollection->count() ?>
+			<?php $_columnCount = $productsOnRow; ?>
+			<div class="row">	
+				<div class="col-left col-lg-9 col-md-9 col-sm-12 col-xs-12">
+					<div class="category-tab-content">
+					
+						<ul class="owl">	
+						<?php $i=0; foreach ($_productCollection as $_product): ?>
+						<?php if($i %$rows == 0) echo "<li class='categorytab-item'>"; ?>
+							<div class="item-inner">
+								<div class="ma-box-content">
+									<div class="products">
+										<?php
+										 $newFromDate = $_product->getNewsFromDate();
+										 $newToDate = $_product->getNewsToDate();                 
+										 $now = date("Y-m-d H:m(worry)");
+										 // Get the Special Price
+										 $specialprice = $_product->getSpecialPrice(); 
+										 // Get the Special Price FROM date
+										 $specialPriceFromDate = $_product->getSpecialFromDate();
+										 // Get the Special Price TO date
+										 $specialPriceToDate = $_product->getSpecialToDate();
+										 // Get Current date
+										 if ($specialprice&&(($specialPriceFromDate <= $now && $specialPriceToDate >= $now) || (($specialPriceFromDate <= $now && $specialPriceFromDate != NULL) && $specialPriceToDate  == ''))&& Mage::getStoreConfig('themeoptions/themeoptions_config/sale_label')){
+											$_savePercent = 100 - round(($_product->getSpecialPrice() / $_product->getPrice())*100);
+											echo "<span class='hot-sale'>-".$_savePercent."%<small>Off</small></span>";
+										 }else{
+										  if((($newFromDate <= $now && $newToDate >= $now) || (($newFromDate <= $now && $newFromDate != NULL) && $newToDate == NULL)) && Mage::getStoreConfig('themeoptions/themeoptions_config/new_label') ) {
+										 ?>
+											 <div class="label-pro-new"><span><?php echo $this->__('new') ?></span></div>
+										 <?php
+										  }
+										 }
+										?>
+										<a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($this->getImageLabel($_product, 'small_image'), null, true) ?>" class="product-image"><img src="<?php echo $this->helper('catalog/image')->init($_product, 'small_image')->resize($w_thumbnail, $h_thumbnail); ?>" alt="<?php echo $this->htmlEscape($this->getImageLabel($_product, 'small_image')) ?>" /></a>
+									</div>
+									<div class="content-box">
+										<div class="content-box-inner">
+											<h2 class="product-name"><a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $this->stripTags($_product->getName(), null, true) ?>"><?php echo $_helper->productAttribute($_product, $_product->getName(), 'name') ?></a></h2>
+											<?php if($review) { ?>
+											<?php echo $this->getReviewsSummaryHtml($_product, 'short') ?>
+											<?php } ?>
+											<?php if($show_price): ?>
+												<div class="price-box">
+													<?php
+													$sym = Mage::app()->getLocale()->currency(Mage::app()->getStore()->getCurrentCurrencyCode())->getSymbol(); 
+													$price = $_product->getPrice();
+													$specialprice = $_product->getFinalPrice();
+													if($price != $specialprice){
+													if($price != ''){
+													echo '<p class="old-price"><span class="price-label">';
+													echo $this->__('Regular Price'). ': </span>';
+													echo '<span class="price">'.$sym.''.number_format($price,2).'</span></p>';
+													}
+													if($specialprice != '')
+													{
+													echo '<p class="special-price">
+													<span class="price-label">Special Price</span>
+													<span class="price">'.$sym.''.number_format($specialprice,2).'</span>
+													</p> ';
+													} 
+													}else {
+													echo '<div class="price-boxs">
+													<span class="regular-price">
+													<span class="price">'.$sym.''.number_format($price,2).'</span>                                    
+													</span>    
+													</div>';    
+													}
+													?>
+												</div>
+												<?php endif; ?>
+												
+												<?php if($showdes){?>
+													<div class="ma-desc">
+														<?php if(!$maxlength){?>
+															<?php echo nl2br($this->htmlEscape($_product->getShortDescription())) ?>
+														<?php } else {?>
+															<?php echo nl2br($this->cut_string_categorytab($this->htmlEscape($_product->getShortDescription()),$maxlength)) ?>			            
+														<?php }?>			                    
+													</div>
+												<?php }?>
+										</div>	
+										<div class="actions clearfix">
+											<?php if($addtocart): ?>
+												<?php if($_product->isSaleable()): ?>
+													<button type="button" title="<?php echo $this->__('Add to Cart') ?>" class="button btn-cart" onclick="setLocation('<?php echo $this->getAddToCartUrl($_product) ?>')"><span><span><?php echo $this->__('Add to Cart') ?></span></span></button>
+												<?php else: ?>
+													<p class="availability out-of-stock"><span><?php echo $this->__('Out of stock') ?></span></p>
+												<?php endif; ?>
+											<?php endif; ?>
+											<?php  if($addtowishlist || $addtocompare): ?>
+												<ul class="add-to-links">
+													<?php if($addtowishlist): ?>
+														<?php if ($this->helper('wishlist')->isAllow()) : ?>
+															<li><a href="<?php echo $this->helper('wishlist')->getAddUrl($_product) ?>"  class="link-wishlist fa fa-heart"><em><?php echo $this->__('Add to Wishlist') ?></em></a></li>
+														<?php endif; ?>
+													<?php endif; ?>
+													<?php if($addtocompare): ?>
+														<?php if($_compareUrl=$this->getAddToCompareUrl($_product)): ?>
+															<li><span class="separator">|</span> <a href="<?php echo $_compareUrl ?>" class="link-compare fa fa-signal"><em><?php echo $this->__('Add to Compare') ?></em></a></li>
+														<?php endif; ?>
+													<?php endif; ?>
+												</ul>
+											<?php endif; ?>
+										</div>
+											
+									</div>
+									<?php $i++;?>
+								</div>
+							</div>
+								<?php if($i %$rows == 0) echo "</li>"; ?>                   
+							<?php endforeach; ?>
+								<?php if($i %$rows != 0) echo "</li>"; ?>
+						</ul>
+					</div>
+				</div>
+				<div class="col-right col-lg-3 col-md-3 col-sm-12 col-xs-12">
+					<div class="category-tab-image">
+						<?php if($cattab): ?>
+						<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'catalog/category/'.$cattab; ?>" alt="<?php echo $this->__('ads') ?>"/>
+						<?php endif; ?>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$jq(document).ready(function(){
+					<?php $idBx = '#tab'.$cate_id.'-'.$identify.' .owl'; ?>
+					$jq("<?php echo $idBx; ?>").owlCarousel({
+						autoPlay : false,
+						items : <?php if($itemsDefault) echo $itemsDefault; else echo '6'; ?>,
+						itemsDesktop : [1199,<?php if($itemsDesktop) echo $itemsDesktop; else echo '5'; ?>],
+						itemsDesktopSmall : [980,<?php if($itemsDesktopSmall) echo $itemsDesktopSmall; else echo '3'; ?>],
+						itemsTablet: [700,<?php if($itemsTablet) echo $itemsTablet; else echo '2'; ?>],
+						itemsMobile : [400,<?php if($itemsMobile) echo $itemsMobile; else echo '1'; ?>],
+						slideSpeed : <?php if($speed) echo $speed; else echo '500'; ?>,
+						paginationSpeed : <?php if($speed) echo $speed; else echo '500'; ?>,
+						rewindSpeed : <?php if($speed) echo $speed; else echo '500'; ?>,
+						navigation : <?php if($next_back) echo 'true'; else echo 'false'; ?>,
+						stopOnHover : true,
+						pagination : <?php if($nav_ctrl) echo 'true'; else echo 'false'; ?>,
+						scrollPerPage:true,
+					});
+				});
+			</script>
+		 </div><!-- #tab1 -->
+		 <?php }?>
+
+	 </div><!-- .tab_container --> 
+
+</div> <!-- #container -->
+
+<script type="text/javascript">
+
+$jq(document).ready(function() {
+	
+	$jq(".tab_content_<?php echo $identify; ?>").hide();
+	$jq(".tab_content_<?php echo $identify; ?>:nth-child(2)").show(); 
+
+	$jq("ul.tabs<?php echo '-'.$identify;?> li").click(function() {
+		$jq("ul.tabs<?php echo '-'.$identify;?> li").removeClass("active");
+		$jq(this).addClass("active");
+		$jq(".tab_content_<?php echo $identify; ?>").hide();
+		var activeTab = $jq(this).find("p").attr('class'); 
+		$jq("#"+activeTab).fadeIn(); 
+	});
+});
+
+</script> 

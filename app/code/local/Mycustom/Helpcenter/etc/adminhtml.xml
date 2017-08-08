@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <helpcenter translate="title" module="helpcenter">
+            <title>HelpCenter</title>
+            <sort_order>40</sort_order>
+            <action>adminhtml/helpcenter</action>
+        </helpcenter>
+    </menu>
+</config>

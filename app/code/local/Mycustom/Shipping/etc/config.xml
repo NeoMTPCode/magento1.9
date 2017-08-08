@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Mycustom_Shipping>
+            <version>0.0.1</version>
+        </Mycustom_Shipping>
+    </modules>
+    <global>
+        <models>
+            <mycustom_shipping>
+                <class>Mycustom_Shipping_Model</class>
+            </mycustom_shipping>
+        </models>
+    </global>
+    <default>
+        <carriers>
+            <mycustom_shipping>
+                <active>1</active>
+                <model>mycustom_shipping/carrier</model>
+                <title>Mycustom Shipping</title>
+                <sort_order>10</sort_order>
+                <sallowspecific>0</sallowspecific>
+            </mycustom_shipping>
+        </carriers>
+    </default>
+</config>

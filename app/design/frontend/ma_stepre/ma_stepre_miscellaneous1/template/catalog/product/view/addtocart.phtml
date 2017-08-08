@@ -1,0 +1,95 @@
+<?php
+/**
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magentocommerce.com for more information.
+ *
+ * @category    design
+ * @package     base_default
+ * @copyright   Copyright (c) 2013 Magento Inc. (http://www.magentocommerce.com)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+?>
+<?php $_product = $this->getProduct(); ?>
+<?php $buttonTitle = $this->__('Add to Cart'); ?>
+<?php if($_product->isSaleable()): ?>
+    <div class="add-to-cart">
+        <div class="input-content">
+        <?php if(!$_product->isGrouped()): ?>
+            <label><?php echo $this->__('Quantity:') ?></label>
+            <input class="button-arrow button-down" type="button" value='-' />
+            <input style="float: none;" type="text" name="qty" id="qty" readonly maxlength="12" value="<?php echo $this->getProductDefaultQty() * 1 ?>" title="<?php echo $this->__('Qty') ?>" class="input-text qty" />
+            <input class="button-arrow button-up" type="button" value='+' />
+
+        <?php endif; ?>
+        </div>
+        <button type="button" title="<?php echo $buttonTitle ?>" class="button btn-cart" onclick="productAddToCartForm.submit(this)"><span><span><?php echo $buttonTitle ?></span></span></button>
+        <?php echo $this->getChildHtml('', true, true) ?>
+    </div>
+<?php endif; ?>
+<script type="text/javascript">
+    //&lt;![CDATA[
+    jQuery(function($) {
+        $qty = $('.add-to-cart .input-content').find('.qty');
+        qty = 1;
+        checkStock(qty);
+        var stock = <?php echo (int)Mage::getModel('cataloginventory/stock_item')
+            ->loadByProduct($_product)->getQty();?>;
+
+        $('.add-to-cart .button-up').click(function() {
+            if (qty < stock){
+                qty += 1;
+            }
+            checkStock(qty);
+            $qty.val(qty);
+        });
+        $('.add-to-cart .button-down').click(function() {
+            if (qty > 1){
+                qty -= 1;
+            }
+            checkStock(qty);
+            $qty.val(qty);
+        });
+
+        function checkStock(qty) {
+            if(qty <= 1){
+                $('.add-to-cart .button-down').prop('disabled', true);
+                $('.add-to-cart .button-down').css('opacity', '0.3');
+            }else{
+                $('.add-to-cart .button-down').prop('disabled', false);
+                $('.add-to-cart .button-down').css('opacity', '1');
+                if (qty >= stock){
+                    $('.add-to-cart .button-up').prop('disabled', true);
+                    $('.add-to-cart .button-up').css('opacity', '0.3');
+                }else{
+                    $('.add-to-cart .button-up').prop('disabled', false);
+                    $('.add-to-cart .button-up').css('opacity', '1');
+                }
+            }
+        }
+    });
+    //]]&gt;
+</script>
+<style>
+    input.button-arrow{
+        height: 34px;
+        width: 2.8em !important;
+        line-height: 32px;
+        border: .5px solid lightgrey;
+        margin-bottom: 5px;
+    }
+</style>
